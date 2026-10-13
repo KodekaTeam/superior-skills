@@ -1,4 +1,6 @@
-![Superior](assets/profile.png)
+<p align="center">
+  <img src="assets/profile.png" alt="Superior" width="240">
+</p>
 
 # Superior
 
