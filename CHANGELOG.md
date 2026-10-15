@@ -6,6 +6,10 @@ The project follows [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- Community contribution guidelines, code of conduct, security policy, and MIT License.
+
 ## [v1.0.0] - 2026-10-15
 
 ### Added

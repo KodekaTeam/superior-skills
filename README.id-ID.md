@@ -4,6 +4,8 @@
 
 # Superior
 
+**Versi saat ini:** [`v1.0.0`](VERSION) · [Riwayat perubahan](CHANGELOG.md)
+
 `superior-skills` adalah paket instruksi reusable untuk menghasilkan perubahan software yang kontekstual, dapat dibuktikan, dan tidak terasa seperti keluaran template. Paket ini bukan kumpulan larangan gaya. Prinsip utamanya adalah membuat keputusan dari bukti proyek, menjaga fungsi nyata, lalu memverifikasi hasil yang berubah.
 
 ## Perbedaan utama
@@ -21,6 +23,10 @@
 superior-skills/
 |-- VERSION
 |-- CHANGELOG.md
+|-- CODE_OF_CONDUCT.md
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- LICENSE
 |-- AGENTS.md
 |-- INSTALL.md
 |-- principles/
@@ -39,6 +45,13 @@ superior-skills/
         |-- superior-lean/
         `-- superior-docs/
 ```
+
+## Komunitas dan tata kelola
+
+- [Panduan kontribusi](CONTRIBUTING.md)
+- [Kode Etik](CODE_OF_CONDUCT.md)
+- [Kebijakan keamanan](SECURITY.md)
+- [Lisensi MIT](LICENSE)
 
 ## Cara menggunakan
 
