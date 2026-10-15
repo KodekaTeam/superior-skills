@@ -25,18 +25,18 @@ After verified material changes to code, configuration, schema, API behavior, se
 
 ## Skill routing
 
-Codex discovers the skills under `.agents/skills`. Load only the entries that materially affect the task:
+The portable plugin discovers its skills under the canonical root `skills/` directory. Load only the entries that materially affect the task:
 
-- Build, redesign, or visually refine an interface: `.agents/skills/superior-ui/SKILL.md`
-- Audit an existing interface and prepare evidence-backed recommendations: `.agents/skills/superior-ui-audit/SKILL.md`
-- Repair responsive behavior or mobile layout: `.agents/skills/superior-responsive/SKILL.md`
-- Check accessibility, keyboard use, focus, contrast, or inclusive states: `.agents/skills/superior-accessibility/SKILL.md`
-- Write or revise product-facing prose: `.agents/skills/superior-copy/SKILL.md`
-- Clean up code comments without changing behavior: `.agents/skills/superior-comments/SKILL.md`
-- Implement or review application, API, state, and business rules: `.agents/skills/superior-logic/SKILL.md`
-- Harden or review REST API security, rate limiting, authorization boundaries, abuse controls, or SSRF defenses: `.agents/skills/superior-api-security/SKILL.md`
-- Reduce over-engineering in a coding change: `.agents/skills/superior-lean/SKILL.md`
-- Create, reconstruct, or synchronize durable project documentation: `.agents/skills/superior-docs/SKILL.md`
+- Build, redesign, or visually refine an interface: `superior-ui`
+- Audit an existing interface and prepare evidence-backed recommendations: `superior-ui-audit`
+- Repair responsive behavior or mobile layout: `superior-responsive`
+- Check accessibility, keyboard use, focus, contrast, or inclusive states: `superior-accessibility`
+- Write or revise product-facing prose: `superior-copy`
+- Clean up code comments without changing behavior: `superior-comments`
+- Implement or review application, API, state, and business rules: `superior-logic`
+- Harden or review REST API security, rate limiting, authorization boundaries, abuse controls, or SSRF defenses: `superior-api-security`
+- Reduce over-engineering in a coding change: `superior-lean`
+- Create, reconstruct, or synchronize durable project documentation: `superior-docs`
 
 Common combinations:
 

@@ -1,0 +1,20 @@
+{
+  "name": "superior-skills",
+  "owner": {
+    "name": "KodekaTeam"
+  },
+  "metadata": {
+    "description": "KodekaTeam skills for contextual software engineering workflows.",
+    "version": "1.5.0"
+  },
+  "plugins": [
+    {
+      "name": "superior-skills",
+      "source": ".",
+      "description": "Evidence-based engineering, interface, documentation, and API security workflows.",
+      "version": "1.5.0",
+      "license": "MIT",
+      "logo": "assets/profile.png"
+    }
+  ]
+}

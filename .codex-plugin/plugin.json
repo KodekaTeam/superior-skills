@@ -1,0 +1,17 @@
+{
+  "name": "superior-skills",
+  "version": "1.5.0",
+  "description": "Evidence-based engineering, interface, documentation, and API security workflows for coding agents.",
+  "author": {
+    "name": "KodekaTeam"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Superior Skills",
+    "shortDescription": "Contextual software engineering workflows",
+    "longDescription": "Build, review, secure, and document software changes using project evidence and focused reusable skills.",
+    "developerName": "KodekaTeam",
+    "category": "Productivity"
+  }
+}

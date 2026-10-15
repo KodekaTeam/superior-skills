@@ -1,0 +1,14 @@
+{
+  "name": "superior-skills",
+  "description": "KodekaTeam skills for contextual software engineering workflows.",
+  "owner": {
+    "name": "KodekaTeam"
+  },
+  "plugins": [
+    {
+      "name": "superior-skills",
+      "source": "./",
+      "description": "Evidence-based engineering, interface, documentation, and API security workflows."
+    }
+  ]
+}
