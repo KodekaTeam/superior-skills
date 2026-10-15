@@ -67,6 +67,7 @@ Report:
 
 ## Combine skills narrowly
 
+- Use `superior-debugging` when a failing test is evidence of an unknown production or environment cause rather than a test-design problem.
 - Use `superior-logic` when tests accompany changes to business rules, state transitions, persistence, or API behavior.
 - Use `superior-api-security` for threat-driven negative cases and security-control verification.
 - Use `superior-accessibility`, `superior-responsive`, or `superior-ui` when the asserted behavior is owned by those interface concerns.

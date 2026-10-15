@@ -12,6 +12,7 @@ project/
 `-- .agents/
     `-- skills/
         |-- superior-ui/
+        |-- superior-debugging/
         |-- superior-testing/
         |-- superior-docs/
         `-- ...

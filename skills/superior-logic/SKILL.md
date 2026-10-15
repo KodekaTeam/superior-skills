@@ -45,6 +45,10 @@ State a material assumption only when code and documentation cannot establish it
 
 Load `superior-api-security` when API hardening, rate limiting, token security, abuse prevention, SSRF, or a dedicated security review is part of the request. Keep `superior-logic` responsible for domain contracts and invariants; use the security skill for threat-driven controls and negative verification.
 
+## Diagnose uncertain failures
+
+Load `superior-debugging` when a concrete failure exists but its cause is uncertain, environment-specific, intermittent, or requires causal tracing. Once the cause is established, use this skill for any in-scope repair to domain rules, state, persistence, or API behavior. A straightforward implementation defect with an already-proven cause does not require the dedicated debugging workflow.
+
 ## Keep failure observable
 
 - Handle an error at the layer that can recover, translate, or add useful context.

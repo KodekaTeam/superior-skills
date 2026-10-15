@@ -8,6 +8,7 @@ Indeks ini mencakup seluruh skill kanonis di `skills/`. Pilih skill yang paling 
 | `superior-api-security` | Hardening REST API, boundary otorisasi, rate limiting, abuse control, dan verifikasi keamanan | [Buka](superior-api-security/README.md) |
 | `superior-comments` | Audit atau perapian komentar tanpa mengubah perilaku kode | [Buka](superior-comments/README.md) |
 | `superior-copy` | Teks produk dan pemasaran yang terlihat pengguna | [Buka](superior-copy/README.md) |
+| `superior-debugging` | Diagnosis berbasis evidence untuk kegagalan reproducible, intermittent, dan runtime | [Buka](superior-debugging/README.md) |
 | `superior-docs` | Bootstrap, sinkronisasi, rekonstruksi, dan handoff dokumentasi | [Buka](superior-docs/README.md) |
 | `superior-lean` | Solusi paling kecil yang tetap lengkap dan benar | [Buka](superior-lean/README.md) |
 | `superior-logic` | API, state, data, validasi, dan aturan bisnis | [Buka](superior-logic/README.md) |

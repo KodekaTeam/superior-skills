@@ -8,6 +8,7 @@ This index covers every canonical skill available in `skills/`. Select the skill
 | `superior-api-security` | REST API hardening, authorization boundaries, rate limiting, abuse controls, and security verification | [Open](superior-api-security/README.md) |
 | `superior-comments` | Auditing or refining comments without changing code behavior | [Open](superior-comments/README.md) |
 | `superior-copy` | User-facing product and marketing copy | [Open](superior-copy/README.md) |
+| `superior-debugging` | Evidence-driven diagnosis of reproducible, intermittent, and runtime failures | [Open](superior-debugging/README.md) |
 | `superior-docs` | Documentation bootstrapping, synchronization, reconstruction, and handoff | [Open](superior-docs/README.md) |
 | `superior-lean` | The smallest solution that remains complete and correct | [Open](superior-lean/README.md) |
 | `superior-logic` | APIs, state, data, validation, and business rules | [Open](superior-logic/README.md) |
