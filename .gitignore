@@ -1,0 +1,24 @@
+# Internal audit/review documents (not published to the repo)
+docs/
+issue/
+
+# Python bytecode, written whenever the contrast checker runs
+__pycache__/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Local environment settings
+.env
+
+# Local virtual environment
+venv/
+
+# Others
+*.log
+CHANGELOG.md
+CLAUDE.md
