@@ -6,12 +6,23 @@
     "name": "KodekaTeam"
   },
   "license": "MIT",
+  "keywords": [
+    "ai-slop",
+    "ui-design",
+    "design-rules",
+    "copy-rules",
+    "agent-skills",
+    "ui",
+    "accessibility"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Superior Skills",
     "shortDescription": "Contextual engineering skills",
     "longDescription": "Build, review, secure, and document software changes using project evidence and focused reusable skills.",
     "developerName": "KodekaTeam",
-    "category": "Productivity"
+    "category": "Productivity",
+    "composerIcon": "./assets/profile.png",
+    "logo": "./assets/profile.png"
   }
 }
