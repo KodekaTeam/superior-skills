@@ -4,8 +4,6 @@
 
 # Superior
 
-**Versi saat ini:** [`v1.0.0`](VERSION) · [Riwayat perubahan](CHANGELOG.md)
-
 `superior-skills` adalah paket instruksi reusable untuk menghasilkan perubahan software yang kontekstual, dapat dibuktikan, dan tidak terasa seperti keluaran template. Paket ini bukan kumpulan larangan gaya. Prinsip utamanya adalah membuat keputusan dari bukti proyek, menjaga fungsi nyata, lalu memverifikasi hasil yang berubah.
 
 ## Perbedaan utama

@@ -4,8 +4,6 @@
 
 # Superior
 
-**Current version:** [`v1.0.0`](VERSION) · [Changelog](CHANGELOG.md)
-
 `superior-skills` is a reusable instruction package for producing software changes that are contextual, evidence-based, and free from a generic template feel. It is not a collection of stylistic prohibitions. Its core principle is to make decisions from project evidence, preserve real functionality, and verify the resulting changes.
 
 ## Key differences
