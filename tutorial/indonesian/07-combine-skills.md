@@ -12,6 +12,7 @@ Gabungkan skills berdasarkan concern yang benar-benar ada, bukan berdasarkan jum
 | REST API sensitif keamanan | `superior-api-security` | `superior-logic` untuk invariant domain, transaksi, atau idempotency |
 | Perbaikan layout mobile | `superior-responsive` | `superior-accessibility` untuk keyboard/touch/focus |
 | Penyederhanaan implementasi | `superior-lean` | `superior-logic` bila behavior ikut dianalisis |
+| Pekerjaan regresi atau test suite | `superior-testing` | Skill domain bila behavior production juga termasuk scope |
 | Cleanup komentar | `superior-comments` | Tidak perlu skill UI atau logic |
 | Dokumentasi maintenance | `superior-docs` | Skill domain hanya jika perlu memahami perubahan terkait |
 

@@ -12,6 +12,7 @@ This index covers every canonical skill available in `skills/`. Select the skill
 | `superior-lean` | The smallest solution that remains complete and correct | [Open](superior-lean/README.md) |
 | `superior-logic` | APIs, state, data, validation, and business rules | [Open](superior-logic/README.md) |
 | `superior-responsive` | Reflow, overflow, adaptive navigation, and touch targets | [Open](superior-responsive/README.md) |
+| `superior-testing` | Test strategy, regressions, test levels, fixtures, and flaky failures | [Open](superior-testing/README.md) |
 | `superior-ui` | Building or refining product interfaces | [Open](superior-ui/README.md) |
 | `superior-ui-audit` | Read-only visual audits with prioritized findings | [Open](superior-ui-audit/README.md) |
 

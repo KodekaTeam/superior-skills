@@ -119,7 +119,7 @@ Salinan standalone tidak diperbarui secara otomatis; ganti folder skill `superio
 
 ## Cara menggunakan
 
-Skills dipilih otomatis berdasarkan konteks tugas atau dapat dipanggil secara eksplisit, misalnya `$superior-ui`, `$superior-api-security`, atau `$superior-docs`. Entry point portable berada di [`plugin.json`](plugin.json), sedangkan definisi skill kanonis berada di [`skills/`](skills/).
+Skills dipilih otomatis berdasarkan konteks tugas atau dapat dipanggil secara eksplisit, misalnya `$superior-ui`, `$superior-testing`, `$superior-api-security`, atau `$superior-docs`. Entry point portable berada di [`plugin.json`](plugin.json), sedangkan definisi skill kanonis berada di [`skills/`](skills/).
 
 ## FAQ
 

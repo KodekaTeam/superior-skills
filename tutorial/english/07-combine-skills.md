@@ -12,6 +12,7 @@ Combine skills according to the concerns actually present, not according to the 
 | Security-sensitive REST API | `superior-api-security` | `superior-logic` for domain invariants, transactions, or idempotency |
 | Mobile layout repair | `superior-responsive` | `superior-accessibility` for keyboard, touch, or focus |
 | Implementation simplification | `superior-lean` | `superior-logic` when behavior is also analyzed |
+| Regression or test-suite work | `superior-testing` | The domain skill when production behavior is also in scope |
 | Comment cleanup | `superior-comments` | UI or logic skills are unnecessary |
 | Maintenance documentation | `superior-docs` | A domain skill only when needed to understand the related change |
 

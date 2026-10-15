@@ -57,4 +57,6 @@ Load `superior-api-security` when API hardening, rate limiting, token security, 
 
 Test observable behavior rather than private steps. Cover the normal path and the material boundary, invalid-input, authorization, partial-failure, duplication, retry, or concurrency cases affected by the change. Reproduce a bug with a focused failing test when practical.
 
+Load `superior-testing` when test design, level selection, fixtures, doubles, flaky behavior, or suite reliability is a primary part of the request. Ordinary implementation verification remains part of this skill and does not require loading the dedicated testing workflow.
+
 Use existing test conventions and run the narrowest relevant lint, type, test, and build checks. Report unverified conditions and compatibility risk explicitly.
