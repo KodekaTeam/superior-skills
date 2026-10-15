@@ -74,6 +74,7 @@ Report commands actually run, datastore/version used, data scale represented, an
 - Use `superior-logic` for domain behavior, API contracts, and application orchestration around persistence.
 - Use `superior-testing` when migration, integration, compatibility, or concurrency test design is a primary concern.
 - Use `superior-debugging` when a data symptom exists but its causal mechanism is uncertain.
+- Use `superior-performance` when representative query, capacity, resource, or latency measurement is a primary concern.
 - Use `superior-api-security` for tenant isolation, unsafe query construction, sensitive-data exposure, or abuse-driven resource controls.
 - Use `superior-docs` after verified schema, migration, recovery, or operational procedure changes.
 

@@ -37,6 +37,8 @@ State a material assumption only when code and documentation cannot establish it
 
 Load `superior-database` when schema design, query shape, indexes, transaction isolation, migrations, backfills, or datastore rollout safety becomes a primary part of the request. Keep routine persistence orchestration here when the underlying data contract is unchanged.
 
+Load `superior-performance` when latency, throughput, resource use, capacity, or scalability is a primary concern requiring measurement and profiling. Ordinary boundedness and avoiding obviously unnecessary work remain part of this skill.
+
 ## Enforce security at trusted boundaries
 
 - Authentication identifies a caller; authorization still governs each resource and action.

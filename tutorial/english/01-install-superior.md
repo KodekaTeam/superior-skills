@@ -14,6 +14,7 @@ project/
         |-- superior-ui/
         |-- superior-database/
         |-- superior-debugging/
+        |-- superior-performance/
         |-- superior-testing/
         |-- superior-docs/
         `-- ...

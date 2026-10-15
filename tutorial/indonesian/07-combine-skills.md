@@ -11,6 +11,7 @@ Gabungkan skills berdasarkan concern yang benar-benar ada, bukan berdasarkan jum
 | Fitur full-stack | `superior-logic` + `superior-ui` | `superior-docs` jika pengetahuan durable berubah |
 | Bug yang belum pasti atau insiden runtime | `superior-debugging` | `superior-logic` untuk perbaikan behavior terkonfirmasi; `superior-testing` untuk desain regresi khusus |
 | Perubahan schema, transaction, atau migration | `superior-database` | `superior-logic` untuk behavior aplikasi; `superior-testing` untuk desain test compatibility atau concurrency yang substansial |
+| Pekerjaan performa atau capacity terukur | `superior-performance` | Skill database, UI, atau logic hanya ketika kontrak miliknya juga berubah |
 | REST API sensitif keamanan | `superior-api-security` | `superior-logic` untuk invariant domain, transaksi, atau idempotency |
 | Perbaikan layout mobile | `superior-responsive` | `superior-accessibility` untuk keyboard/touch/focus |
 | Penyederhanaan implementasi | `superior-lean` | `superior-logic` bila behavior ikut dianalisis |

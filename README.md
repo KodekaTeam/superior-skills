@@ -118,7 +118,7 @@ Standalone copies do not update automatically; replace the installed `superior-*
 
 ## Usage
 
-Skills are selected automatically from the task context or can be invoked explicitly, for example with `$superior-ui`, `$superior-database`, `$superior-debugging`, or `$superior-docs`. The portable entrypoint is [`plugin.json`](plugin.json), and canonical skill definitions live under [`skills/`](skills/).
+Skills are selected automatically from the task context or can be invoked explicitly, for example with `$superior-ui`, `$superior-performance`, `$superior-database`, or `$superior-docs`. The portable entrypoint is [`plugin.json`](plugin.json), and canonical skill definitions live under [`skills/`](skills/).
 
 ## FAQ
 

@@ -1,7 +1,7 @@
 {
   "name": "superior-skills",
   "version": "2.0.0",
-  "description": "Evidence-based engineering, database, debugging, testing, interface, documentation, and API security workflows for coding agents.",
+  "description": "Evidence-based engineering, performance, database, debugging, testing, interface, documentation, and API security workflows for coding agents.",
   "author": {
     "name": "KodekaTeam"
   },
@@ -12,6 +12,7 @@
     "design-rules",
     "copy-rules",
     "agent-skills",
+    "performance",
     "database",
     "debugging",
     "testing",
@@ -22,7 +23,7 @@
   "interface": {
     "displayName": "Superior Skills",
     "shortDescription": "Contextual engineering skills",
-    "longDescription": "Design data, diagnose, build, test, review, secure, and document software changes using project evidence and focused reusable skills.",
+    "longDescription": "Measure, design data, diagnose, build, test, review, secure, and document software changes using project evidence and focused reusable skills.",
     "developerName": "KodekaTeam",
     "category": "Productivity",
     "composerIcon": "./assets/profile.png",

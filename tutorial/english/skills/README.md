@@ -13,6 +13,7 @@ This index covers every canonical skill available in `skills/`. Select the skill
 | `superior-docs` | Documentation bootstrapping, synchronization, reconstruction, and handoff | [Open](superior-docs/README.md) |
 | `superior-lean` | The smallest solution that remains complete and correct | [Open](superior-lean/README.md) |
 | `superior-logic` | APIs, state, data, validation, and business rules | [Open](superior-logic/README.md) |
+| `superior-performance` | Measurement, profiling, latency, throughput, resources, loading, and capacity | [Open](superior-performance/README.md) |
 | `superior-responsive` | Reflow, overflow, adaptive navigation, and touch targets | [Open](superior-responsive/README.md) |
 | `superior-testing` | Test strategy, regressions, test levels, fixtures, and flaky failures | [Open](superior-testing/README.md) |
 | `superior-ui` | Building or refining product interfaces | [Open](superior-ui/README.md) |

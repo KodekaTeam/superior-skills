@@ -67,3 +67,5 @@ Challenge anything that looks borrowed from a generic template. Keep it when evi
 ## Verify
 
 Exercise changed interactions and relevant states. Check representative narrow and wide viewports, content extremes, keyboard flow, and the project's normal lint/type/build checks in proportion to the change. Report concrete results and any unverified risk.
+
+Load `superior-performance` when loading, rendering, responsiveness, bundle cost, or client memory is a primary measured concern. Keep ordinary motion and rendering discipline in this skill when no dedicated performance investigation is needed.
