@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "superior-skills",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "Evidence-based engineering, interface, documentation, and API security workflows for coding agents.",
   "author": {
     "name": "KodekaTeam"
