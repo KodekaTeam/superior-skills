@@ -15,7 +15,9 @@ project/
         |-- superior-code-review/
         |-- superior-database/
         |-- superior-debugging/
+        |-- superior-delivery/
         |-- superior-performance/
+        |-- superior-reliability/
         |-- superior-testing/
         |-- superior-docs/
         `-- ...

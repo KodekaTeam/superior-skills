@@ -84,6 +84,8 @@ Avoid duplicate findings that share one root cause. After findings, include a sh
 - Use `superior-testing` when test architecture, reliability, or missing coverage requires dedicated judgment.
 - Use `superior-ui-audit` for visual product-surface findings; use accessibility or responsive skills when those are explicit review scopes.
 - Use `superior-debugging` when a concrete observed failure must be causally diagnosed rather than reviewed from a change set.
+- Use `superior-delivery` when pipeline, artifact promotion, rollout, or rollback behavior needs dedicated evaluation.
+- Use `superior-reliability` when availability objectives, failure isolation, degradation, or recovery are central.
 - Use `superior-logic` only when the user also asks to implement a confirmed behavioral fix.
 
 Do not broaden a general review into a full security audit, architecture redesign, dependency migration, or implementation task without explicit scope.

@@ -75,6 +75,8 @@ Security completion requires evidence at the effective enforcement point. Run th
 - Use `superior-logic` when the work also changes business invariants, persistence, transactions, idempotency, or domain behavior.
 - Use `superior-database` when enforcement depends on tenant-scoped schema, constraints, query ownership, indexes, migrations, or sensitive-data storage.
 - Use `superior-performance` when security-related resource controls require representative capacity, latency, or saturation measurement.
+- Use `superior-delivery` when the security boundary is owned by pipeline identity, artifact provenance, publication, or deployment credentials.
+- Use `superior-reliability` when abuse, dependency failure, or recovery must preserve an explicit availability objective.
 - Use `superior-testing` when negative-security fixtures, isolation, concurrency, or deployed-boundary test design is a primary concern.
 - Use `superior-docs` when the security model, public contract, operational configuration, or incident-relevant procedure changes durably.
 - Use `superior-lean` to avoid unnecessary security machinery, but never simplify away a control required by the identified risk.

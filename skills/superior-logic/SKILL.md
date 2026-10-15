@@ -43,6 +43,8 @@ Load `superior-database` when schema design, query shape, indexes, transaction i
 
 Load `superior-performance` when latency, throughput, resource use, capacity, or scalability is a primary concern requiring measurement and profiling. Ordinary boundedness and avoiding obviously unnecessary work remain part of this skill.
 
+Load `superior-reliability` when service objectives, failure isolation, graceful degradation, failover, or operational recovery is primary. Load `superior-delivery` when the task owns pipeline, artifact, environment promotion, rollout, or rollback behavior.
+
 ## Enforce security at trusted boundaries
 
 - Authentication identifies a caller; authorization still governs each resource and action.

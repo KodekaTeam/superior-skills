@@ -71,6 +71,8 @@ Check neighboring workloads for regressions. An optimization can improve one per
 
 - Use `superior-debugging` when the performance symptom's cause is still uncertain and causal investigation is primary.
 - Use `superior-database` when query plans, indexes, locks, schema, or datastore capacity owns the bottleneck.
+- Use `superior-reliability` when objectives, overload behavior, graceful degradation, or recovery owns the outcome.
+- Use `superior-delivery` when performance evidence is a release gate or the optimization changes build or rollout behavior.
 - Use `superior-testing` when benchmark design or performance-regression automation requires dedicated test judgment.
 - Use `superior-ui`, `superior-responsive`, or `superior-accessibility` when an interface change is required to deliver the measured improvement safely.
 - Use `superior-logic` when optimization changes application behavior, concurrency, state, or external calls.

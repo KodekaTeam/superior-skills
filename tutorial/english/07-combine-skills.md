@@ -13,6 +13,8 @@ Combine skills according to the concerns actually present, not according to the 
 | Uncertain bug or runtime incident | `superior-debugging` | `superior-logic` for a confirmed behavioral repair; `superior-testing` for dedicated regression design |
 | Schema, transaction, or migration change | `superior-database` | `superior-logic` for application behavior; `superior-testing` for substantial compatibility or concurrency test design |
 | Measured performance or capacity work | `superior-performance` | The database, UI, or logic skill only when its owned contract also changes |
+| Pipeline, release, or deployment work | `superior-delivery` | `superior-database` for migration; `superior-reliability` for availability or recovery objectives |
+| Resilience or operational recovery | `superior-reliability` | `superior-debugging` for unknown cause; `superior-performance` for capacity evidence; `superior-delivery` for rollout execution |
 | Security-sensitive REST API | `superior-api-security` | `superior-logic` for domain invariants, transactions, or idempotency |
 | Mobile layout repair | `superior-responsive` | `superior-accessibility` for keyboard, touch, or focus |
 | Implementation simplification | `superior-lean` | `superior-logic` when behavior is also analyzed |

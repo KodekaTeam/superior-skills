@@ -11,7 +11,7 @@
     {
       "name": "superior-skills",
       "source": ".",
-      "description": "Evidence-based code review, engineering, performance, database, debugging, testing, interface, documentation, and API security workflows.",
+      "description": "Evidence-based code review, engineering, delivery, reliability, performance, database, debugging, testing, interface, documentation, and API security workflows.",
       "version": "2.0.0",
       "license": "MIT",
       "logo": "assets/profile.png"

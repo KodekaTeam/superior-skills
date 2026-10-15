@@ -39,6 +39,8 @@ The portable plugin discovers its skills under the canonical root `skills/` dire
 - Design, implement, repair, or review automated tests and test reliability: `superior-testing`
 - Design or change database schemas, queries, transactions, migrations, or backfills: `superior-database`
 - Measure, profile, optimize, or review software performance and capacity: `superior-performance`
+- Design or change CI/CD, release artifacts, environment promotion, rollout, or rollback: `superior-delivery`
+- Improve service objectives, resilience, graceful degradation, recovery, or operational readiness: `superior-reliability`
 - Harden or review REST API security, rate limiting, authorization boundaries, abuse controls, or SSRF defenses: `superior-api-security`
 - Reduce over-engineering in a coding change: `superior-lean`
 - Create, reconstruct, or synchronize durable project documentation: `superior-docs`
@@ -53,6 +55,8 @@ Common combinations:
 - Test strategy or regression work: `superior-testing`; add the domain skill only when production behavior is also being changed or reviewed.
 - Database evolution: `superior-database`; add `superior-logic` for application behavior and `superior-testing` only when test design is substantial.
 - Performance optimization: `superior-performance`; add the owning database, UI, or logic skill only when that contract also changes.
+- Delivery or release work: `superior-delivery`; add database or reliability only when migration, availability, or recovery contracts are substantial.
+- Reliability work: `superior-reliability`; add debugging for an unknown incident cause, performance for measurement, or delivery for rollout execution.
 - Security-sensitive API change: `superior-api-security` for threat-driven controls, plus `superior-logic` when business invariants, persistence, or idempotency also change.
 - Comment-only cleanup: `superior-comments` alone.
 

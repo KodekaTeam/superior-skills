@@ -75,6 +75,8 @@ Do not claim a production-only incident is resolved solely because a local test 
 - Use `superior-logic` when the confirmed repair changes domain rules, persistence, state transitions, or API behavior.
 - Use `superior-database` when the confirmed cause requires schema, query, transaction, migration, or data-repair work.
 - Use `superior-performance` when the confirmed cause leads to measured optimization, capacity analysis, or a performance budget.
+- Use `superior-reliability` when the confirmed cause requires resilience, degradation, recovery, alerting, or runbook changes.
+- Use `superior-delivery` when the failure belongs to a pipeline, artifact, rollout, or environment-promotion path.
 - Use `superior-testing` when regression design, test isolation, or flaky-test diagnosis becomes a primary concern.
 - Use `superior-api-security` when the failure reveals an authorization, validation, abuse, token, SSRF, or information-disclosure weakness.
 - Use `superior-docs` after a verified material repair or when a durable diagnostic or recovery procedure changes.
