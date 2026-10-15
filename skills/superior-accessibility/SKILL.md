@@ -1,11 +1,13 @@
 ---
 name: superior-accessibility
-description: Review or implement interface accessibility for semantics, keyboard operation, focus, contrast, status communication, zoom, and assistive-technology names. Use when accessibility is requested or materially affected by UI work; do not use as a generic visual-design audit.
+description: Review or implement interface accessibility for semantics, keyboard operation, focus, contrast, status communication, zoom, and assistive technology. Use when accessibility is explicitly requested, required by the product contract, or a changed interaction creates substantial accessibility risk. Do not activate for every visual edit or use it as a generic design audit.
 ---
 
 # Superior Accessibility
 
 Preserve the user's ability to perceive, understand, navigate, and operate the changed interface. Prefer native semantics and observable behavior over ARIA-heavy patches.
+
+Establish the affected journey, interaction model, supported platform, and available verification tools before choosing a fix. Preserve product behavior unless an inaccessible interaction contract must change.
 
 ## Structure and names
 
@@ -45,6 +47,8 @@ Resolve the script relative to this `SKILL.md`. For gradients, images, opacity, 
 - Keep loading, expanded, selected, pressed, checked, current, invalid, and disabled states programmatically accurate.
 - Do not disable an action without explaining the prerequisite when it is not otherwise obvious.
 
+Read [references/interaction-and-assistive-technology.md](references/interaction-and-assistive-technology.md) when the task includes dialogs, composite widgets, custom controls, drag and drop, live updates, route changes, virtualized content, or screen-reader-specific behavior.
+
 ## Zoom, motion, and touch
 
 - Reflow at supported zoom without losing information or actions.
@@ -55,3 +59,7 @@ Resolve the script relative to this `SKILL.md`. For gradients, images, opacity, 
 ## Verify behavior
 
 Use keyboard-only navigation through the changed journey. Inspect accessible names and states with available platform tools, test relevant zoom and narrow layouts, and check contrast at the rendered colors. Automated checks are useful coverage, not proof of usability; report both automated and manual evidence.
+
+Do not claim screen-reader compatibility without naming the browser, assistive technology, platform, and journey actually exercised. When that environment is unavailable, verify semantics and accessibility-tree output where possible, then report the untested combination explicitly.
+
+Use `superior-code-review` when accessibility is only one risk area in a broader change-set review, `superior-responsive` for space-driven re-composition, and `superior-ui` for visual or interaction implementation outside the accessibility contract.

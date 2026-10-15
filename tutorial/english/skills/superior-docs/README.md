@@ -15,11 +15,11 @@ Keep current facts, accepted decisions, history, plans, and unknowns separate. D
 ## Workflow
 
 1. State the mode and project scope.
-2. Read relevant code, configuration, tests, and documentation as evidence.
+2. Read relevant code, configuration, tests, documentation, repository status, and the task's final diff as evidence.
 3. For implementation work, create or update the outcome record in `docs/implementation-timeline/<feature-domain>/` with a specific dated filename and maintain the root and domain indexes.
 4. Update the core documents in `docs/structure-of-app/` only when their current-state claims changed.
 5. Create other specialized directories only when supported by evidence and a real need.
-6. Validate links, terminology, implementation status, and potential secret exposure.
+6. Validate links, terminology, implementation status, task attribution, and potential secret exposure.
 
 ## Prompt examples
 
@@ -37,4 +37,4 @@ Use it automatically after `superior-ui`, `superior-logic`, or another skill pro
 
 ## Result checks
 
-Documentation should be traceable to evidence, navigable from its index, and honest about unknowns. Do not copy entire implementations into docs or create empty directories merely to decorate the structure.
+Documentation should be traceable to evidence, navigable from its index, and honest about unknowns. In a dirty worktree, do not attribute pre-existing or concurrent user changes to the current task. Do not copy entire implementations into docs or create empty directories merely to decorate the structure.

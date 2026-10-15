@@ -12,7 +12,8 @@ Use it when layouts break, content is clipped, tables become unusable, navigatio
 2. Find the owner of the width, overflow, min-content, or constraint causing the problem.
 3. Recompose according to content priority instead of shrinking everything.
 4. Introduce local scrolling only where it is intentional.
-5. Test wide, near-breakpoint, and narrow viewports, as well as zoom, long text, touch, and keyboard use.
+5. When runtime space changes, account for the visual viewport, virtual keyboard, safe areas, orientation, input capability, and embedded container.
+6. Test wide, near-breakpoint, and narrow viewports, as well as zoom, long text, touch, and keyboard use.
 
 For new or multi-region layouts, the skill can define distinct desktop and mobile compositions while preserving the same task contract. It selects among patterns such as split-to-stack, sidebar-to-drawer, grid-to-list, table-to-scroller or alternate representation, mega-navigation-to-disclosure, and multi-column-footer-to-prioritized groups.
 
@@ -34,8 +35,9 @@ $superior-responsive Design coordinated desktop and mobile compositions for this
 
 - Pair with `superior-ui` when building or redesigning a page.
 - Pair with `superior-accessibility` for zoom, keyboard, reading order, and target size.
+- Pair with `superior-performance` when client loading, rendering, or responsiveness requires measurement and profiling.
 - Pair with `superior-copy` when realistic text length is part of layout testing.
 
 ## Result checks
 
-The page should not scroll horizontally unless explicitly intended. Important content must remain available, touch targets must remain usable, and reading and focus order must make sense. Breakpoints should respond to content needs rather than customary device numbers.
+The page should not scroll horizontally unless explicitly intended. Important content must remain available, touch targets must remain usable, and reading and focus order must make sense. Breakpoints should respond to content needs rather than customary device numbers. Width-only emulation is insufficient when keyboards, safe areas, orientation, or touch behavior own the risk.

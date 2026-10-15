@@ -15,11 +15,11 @@ Pisahkan fakta saat ini, keputusan yang diterima, riwayat, rencana, dan hal yang
 ## Alur kerja
 
 1. Nyatakan mode dan cakupan proyek.
-2. Baca kode, konfigurasi, tes, dan docs yang relevan sebagai bukti.
+2. Baca kode, konfigurasi, tes, docs, status repository, dan diff final tugas sebagai bukti.
 3. Untuk pekerjaan implementasi, buat atau perbarui catatan outcome di `docs/implementation-timeline/<feature-domain>/` dengan nama file bertanggal yang spesifik, lalu pelihara indeks root dan domainnya.
 4. Perbarui dokumen inti di `docs/structure-of-app/` hanya ketika klaim current-state berubah.
 5. Buat folder khusus lain hanya jika ada bukti dan kebutuhan nyata.
-6. Validasi tautan, istilah, status implementasi, dan kebocoran secret.
+6. Validasi tautan, istilah, status implementasi, atribusi tugas, dan kebocoran secret.
 
 ## Contoh prompt
 
@@ -37,4 +37,4 @@ Gunakan secara otomatis setelah `superior-ui`, `superior-logic`, atau skill lain
 
 ## Hasil yang perlu diperiksa
 
-Dokumentasi harus dapat ditelusuri ke bukti, mudah dinavigasi dari indeks, dan jujur mengenai unknown. Jangan menyalin seluruh kode ke docs atau membuat folder kosong sebagai hiasan struktur.
+Dokumentasi harus dapat ditelusuri ke bukti, mudah dinavigasi dari indeks, dan jujur mengenai unknown. Pada dirty worktree, jangan mengatribusikan perubahan lama atau concurrent milik pengguna kepada tugas saat ini. Jangan menyalin seluruh kode ke docs atau membuat folder kosong sebagai hiasan struktur.

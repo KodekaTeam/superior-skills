@@ -41,6 +41,8 @@ Do not implement separate mobile and desktop experiences that drift in capabilit
 - Give controls sufficient target area and separation. The visible icon may be smaller than its interactive area.
 - Do not rely on hover for disclosure or essential actions.
 
+Read [references/viewport-input-and-safe-areas.md](references/viewport-input-and-safe-areas.md) when browser chrome, virtual keyboards, notches, foldable segments, orientation, pointer capability, standalone display mode, or embedded containers affect the available space or interaction.
+
 ## Overflow decisions
 
 - Fix unintended page-level horizontal scrolling at its owner.
@@ -60,3 +62,5 @@ Test the changed surface at:
 - keyboard focus and an open mobile keyboard for changed forms.
 
 Verify no accidental page overflow, clipping, overlap, inaccessible actions, or order changes. Report representative dimensions and anything not exercised.
+
+Distinguish layout-viewport, visual-viewport, container, and input constraints in the report when they produce different behavior. Do not claim mobile coverage from width-only emulation when keyboard, safe-area, orientation, or touch behavior owns the risk.

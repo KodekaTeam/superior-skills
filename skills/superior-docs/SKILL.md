@@ -29,6 +29,8 @@ Do not wait for a separate documentation request and do not ask for routine perm
 
 Inspect the relevant code paths, configuration, tests, scripts, deployment files, existing documentation, and repository instructions. Use Git history when historical sequence or releases are in scope.
 
+Inspect repository status and the task's actual diff before attributing a change. In a dirty worktree, preserve unrelated user edits and do not describe pre-existing changes as outcomes of the current task.
+
 Classify statements as:
 
 - **Current fact:** proven by the present repository or runtime evidence;
@@ -56,6 +58,8 @@ Do not create empty directories, placeholder guides, or one file per imagined su
 - Use exact commands only after verifying them in repository sources or by safe execution.
 - Separate current state from history and future work.
 - Prefer concise tables for mappings, decisions, interfaces, or commands; use prose for rationale and constraints.
+- Name the authoritative source for volatile contracts and avoid manually duplicating generated schemas, command output, or configuration inventories.
+- Preserve ownership and update triggers: a document should make clear what event can make it stale and where a maintainer verifies it.
 
 Read [references/core-files.md](references/core-files.md) when writing the documentation index, project context, architecture, or decisions ledger.
 
@@ -84,4 +88,5 @@ Recording and synchronization are related but distinct. A material implementatio
 - Confirm commands, paths, names, versions, and ownership against current sources.
 - Check that the root index reaches every maintained document and does not point to placeholders.
 - Review the diff for secrets, credentials, private infrastructure details, personal data, or copied logs.
+- Confirm the document attributes only work supported by the current task's evidence and does not absorb unrelated dirty-worktree changes.
 - Report the evidence inspected, documents changed, historical limits, and unresolved unknowns.

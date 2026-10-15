@@ -21,6 +21,8 @@ Create or update one coherent record after verified changes to any of the follow
 
 One user task should normally produce one outcome-oriented record even when it touches many files. Extend the same record when follow-up corrections occur in the same task.
 
+Before writing the record, inspect repository status and the task's final diff. Attribute only outcomes produced or explicitly adopted in the current task. Pre-existing staged, unstaged, untracked, or concurrent user changes may be relevant context, but do not claim them as this task's implementation. When changes overlap and authorship cannot be separated confidently, narrow the record to verified outcomes and state the attribution limit.
+
 Treat a change as material when at least one of these is true:
 
 - runtime, user-visible, API, data, security, build, deployment, or operational behavior changed;
@@ -189,4 +191,5 @@ Before reporting the implementation complete, verify:
 - paths and links resolve;
 - current-state documents were updated only where their claims changed;
 - no sensitive or invented information entered the docs;
+- the record does not claim unrelated dirty-worktree or concurrent changes as part of the task;
 - a user opt-out was honored without creating documentation artifacts.

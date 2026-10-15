@@ -37,6 +37,8 @@ Prioritize controls that prevent a caller from:
 
 Preserve maintained identity, cryptography, schema-validation, and secret-management libraries. Do not invent token formats, signing schemes, password storage, or encryption protocols.
 
+Read [references/session-token-and-webhook-security.md](references/session-token-and-webhook-security.md) when sessions, bearer tokens, refresh or reset credentials, API keys, signed webhooks, key rotation, revocation, or replay resistance are in scope.
+
 ## Apply rate and abuse controls deliberately
 
 Read [references/rate-limiting-and-abuse-controls.md](references/rate-limiting-and-abuse-controls.md) whenever rate limiting, throttling, quotas, concurrency limits, credential attacks, scraping, spam, enumeration, costly operations, or sensitive business-flow automation is in scope.
@@ -69,9 +71,11 @@ Security completion requires evidence at the effective enforcement point. Run th
 
 ## Combine skills narrowly
 
+- Use `superior-code-review` when security is one risk area in a broader diff, branch, or pull-request review.
 - Use `superior-logic` when the work also changes business invariants, persistence, transactions, idempotency, or domain behavior.
 - Use `superior-database` when enforcement depends on tenant-scoped schema, constraints, query ownership, indexes, migrations, or sensitive-data storage.
 - Use `superior-performance` when security-related resource controls require representative capacity, latency, or saturation measurement.
+- Use `superior-testing` when negative-security fixtures, isolation, concurrency, or deployed-boundary test design is a primary concern.
 - Use `superior-docs` when the security model, public contract, operational configuration, or incident-relevant procedure changes durably.
 - Use `superior-lean` to avoid unnecessary security machinery, but never simplify away a control required by the identified risk.
 

@@ -21,6 +21,8 @@ Before choosing code, identify:
 
 State a material assumption only when code and documentation cannot establish it. Ask the user when competing answers would change the product contract.
 
+Read [references/contract-evolution-and-workflows.md](references/contract-evolution-and-workflows.md) when changing a shared API, event, file format, client/server contract, state machine, or multi-step workflow that can span versions, retries, or partial deployment.
+
 ## Place responsibility
 
 - Keep domain decisions separate from rendering, transport, and persistence when the existing architecture supports that boundary.
@@ -70,3 +72,5 @@ Test observable behavior rather than private steps. Cover the normal path and th
 Load `superior-testing` when test design, level selection, fixtures, doubles, flaky behavior, or suite reliability is a primary part of the request. Ordinary implementation verification remains part of this skill and does not require loading the dedicated testing workflow.
 
 Use existing test conventions and run the narrowest relevant lint, type, test, and build checks. Report unverified conditions and compatibility risk explicitly.
+
+Report the final contract, affected producers and consumers, failure behavior, compatibility or rollout assumptions, and checks actually performed. Do not describe a workflow as atomic or exactly-once unless the implementation and underlying systems prove that guarantee.
