@@ -36,6 +36,7 @@ The portable plugin discovers its skills under the canonical root `skills/` dire
 - Implement or review application, API, state, and business rules: `superior-logic`
 - Diagnose a concrete software failure whose cause is uncertain: `superior-debugging`
 - Design, implement, repair, or review automated tests and test reliability: `superior-testing`
+- Design or change database schemas, queries, transactions, migrations, or backfills: `superior-database`
 - Harden or review REST API security, rate limiting, authorization boundaries, abuse controls, or SSRF defenses: `superior-api-security`
 - Reduce over-engineering in a coding change: `superior-lean`
 - Create, reconstruct, or synchronize durable project documentation: `superior-docs`
@@ -47,6 +48,7 @@ Common combinations:
 - Full-stack feature: `superior-ui` for presentation and `superior-logic` for behavior. Do not make the UI skill govern domain logic.
 - Uncertain bug or incident: `superior-debugging`; add `superior-logic` only when the confirmed repair changes application behavior.
 - Test strategy or regression work: `superior-testing`; add the domain skill only when production behavior is also being changed or reviewed.
+- Database evolution: `superior-database`; add `superior-logic` for application behavior and `superior-testing` only when test design is substantial.
 - Security-sensitive API change: `superior-api-security` for threat-driven controls, plus `superior-logic` when business invariants, persistence, or idempotency also change.
 - Comment-only cleanup: `superior-comments` alone.
 

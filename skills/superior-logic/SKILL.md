@@ -35,6 +35,8 @@ State a material assumption only when code and documentation cannot establish it
 - Use timeouts, cancellation, and bounded retries for remote work according to established project patterns; retry transient conditions only.
 - Preserve user input and useful recovery options after expected failures when safe.
 
+Load `superior-database` when schema design, query shape, indexes, transaction isolation, migrations, backfills, or datastore rollout safety becomes a primary part of the request. Keep routine persistence orchestration here when the underlying data contract is unchanged.
+
 ## Enforce security at trusted boundaries
 
 - Authentication identifies a caller; authorization still governs each resource and action.

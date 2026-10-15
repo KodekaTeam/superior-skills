@@ -10,6 +10,7 @@ Combine skills according to the concerns actually present, not according to the 
 | Read-only visual audit | `superior-ui-audit` | `superior-accessibility` when requested |
 | Full-stack feature | `superior-logic` + `superior-ui` | `superior-docs` when durable knowledge changes |
 | Uncertain bug or runtime incident | `superior-debugging` | `superior-logic` for a confirmed behavioral repair; `superior-testing` for dedicated regression design |
+| Schema, transaction, or migration change | `superior-database` | `superior-logic` for application behavior; `superior-testing` for substantial compatibility or concurrency test design |
 | Security-sensitive REST API | `superior-api-security` | `superior-logic` for domain invariants, transactions, or idempotency |
 | Mobile layout repair | `superior-responsive` | `superior-accessibility` for keyboard, touch, or focus |
 | Implementation simplification | `superior-lean` | `superior-logic` when behavior is also analyzed |

@@ -10,6 +10,7 @@ Gabungkan skills berdasarkan concern yang benar-benar ada, bukan berdasarkan jum
 | Audit visual read-only | `superior-ui-audit` | `superior-accessibility` jika diminta |
 | Fitur full-stack | `superior-logic` + `superior-ui` | `superior-docs` jika pengetahuan durable berubah |
 | Bug yang belum pasti atau insiden runtime | `superior-debugging` | `superior-logic` untuk perbaikan behavior terkonfirmasi; `superior-testing` untuk desain regresi khusus |
+| Perubahan schema, transaction, atau migration | `superior-database` | `superior-logic` untuk behavior aplikasi; `superior-testing` untuk desain test compatibility atau concurrency yang substansial |
 | REST API sensitif keamanan | `superior-api-security` | `superior-logic` untuk invariant domain, transaksi, atau idempotency |
 | Perbaikan layout mobile | `superior-responsive` | `superior-accessibility` untuk keyboard/touch/focus |
 | Penyederhanaan implementasi | `superior-lean` | `superior-logic` bila behavior ikut dianalisis |
