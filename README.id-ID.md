@@ -13,6 +13,7 @@
 - Panduan visual yang panjang menggunakan progressive disclosure melalui `references/`.
 - Nama dan description setiap skill dibuat spesifik agar implicit invocation lebih akurat.
 - Baseline umum berada di `AGENTS.md`; detail spesialis hanya dimuat ketika relevan.
+- Pekerjaan implementasi material yang telah diverifikasi dicatat otomatis dalam `docs/implementation-timeline/` yang terindeks, kecuali pengguna menolaknya.
 
 ## Struktur
 

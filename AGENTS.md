@@ -21,7 +21,7 @@ Before implementation, debugging, refactoring, release, or maintenance work, est
 
 Missing documentation must not block ordinary work. Do not load the entire documentation tree by default. Resolve conflicts in favor of current code, configuration, tests, and newer accepted decisions, then flag stale documentation.
 
-After a material change, update durable documentation only when project context, architecture, an accepted decision, operational commands, release behavior, or maintenance history actually changed. Use `superior-docs` for substantial documentation creation, reconstruction, or synchronization.
+After verified material changes to code, configuration, schema, API behavior, security controls, build behavior, or user-visible functionality, use `superior-docs` to create or update an outcome-oriented record under `docs/implementation-timeline/<feature-domain>/` by default. Use a stable lowercase domain folder and a specific dated filename such as `2026-10-15-add-refresh-token-rotation.md`, not a generic change summary. Do this without waiting for a separate documentation request. If `docs/` or the timeline collection does not exist, create the minimal indexed structure defined by the skill. Skip automatic documentation when the user explicitly declines it for the task, when a higher-priority project instruction prohibits it, or when the work is read-only, unsuccessful, documentation-only, or materially insignificant. Update architecture, decisions, guides, build, or release documents only when their own claims or procedures changed.
 
 ## Skill routing
 

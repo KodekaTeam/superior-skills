@@ -36,15 +36,17 @@ docs/
 
 ### `implementation-timeline/`
 
-Use for coherent delivery phases, realized features, current boundaries, maintenance milestones, and next work. Prefer outcome-oriented files over a diary of chat sessions.
+Use for outcome-oriented records of verified features, fixes, refactors, configuration changes, security work, delivery phases, current boundaries, and maintenance milestones. This is the default destination for automatic AI-agent implementation records. Group records under stable, lowercase feature-domain folders such as `authentication/`, `users/`, `checkout/`, or `api-security/`; each domain has its own `README.md` index. Prefer one coherent record per material task over one record per file, commit, prompt, or chat session.
+
+When this collection is created automatically, include a root `README.md`, the current feature-domain directory and its index, then link the timeline from `docs/README.md`. Name each record with the local date and a specific outcome, such as `authentication/2026-10-15-add-refresh-token-rotation.md`. Read [automatic-change-recording.md](automatic-change-recording.md) for domain ownership, naming, content, exclusions, and opt-out behavior.
 
 ### `implementation-guides/`
 
-Use for subsystem workflows that a maintainer must repeat or safely modify, such as authentication, global state, navigation, storage, reverse proxy, backups, or deep links. Create topic files from real project boundaries rather than a universal checklist.
+Use for living subsystem workflows that a maintainer must repeat or safely modify, such as authentication, global state, navigation, storage, reverse proxy, backups, or deep links. It explains how to operate or extend something; it is not the chronological record of each implementation task. Create topic files from real project boundaries rather than a universal checklist.
 
 ### `build-and-distribution/`
 
-Use for verified environment requirements, commands, local builds, packaging, migrations, signing, deployment, rollback, and troubleshooting. Separate platforms or delivery channels only when their procedures differ materially.
+Use for verified environment requirements, commands, local builds, packaging, migrations, signing, deployment, rollback, and troubleshooting. Update it when those procedures change; keep the dated outcome itself in the implementation timeline. Separate platforms or delivery channels only when their procedures differ materially.
 
 ### `history/`
 

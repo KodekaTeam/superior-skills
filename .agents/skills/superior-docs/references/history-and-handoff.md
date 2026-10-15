@@ -35,7 +35,7 @@ A timeline should help answer:
 - Which boundaries remain intentional or temporary?
 - What maintenance work is safe to continue next?
 
-Do not use chat sessions as the primary unit. A session may produce several outcomes or none.
+After material AI-agent implementation work, the timeline also acts as the default change record. Use the verified outcome as the unit: one task may produce one coherent record, several genuinely independent outcomes, or no record when nothing material changed. Do not use prompts, chat turns, or file counts as the primary unit.
 
 ## Handoff snapshot
 

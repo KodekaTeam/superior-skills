@@ -1,10 +1,11 @@
 # Menggunakan `superior-docs`
 
-Skill ini memelihara memori proyek yang tahan lintas sesi. Empat mode utamanya adalah Bootstrap, Synchronize, Reconstruct, dan Handoff.
+Skill ini memelihara memori proyek yang tahan lintas sesi. Lima mode utamanya adalah Bootstrap, Record, Synchronize, Reconstruct, dan Handoff.
 
 ## Pilih mode yang tepat
 
 - **Bootstrap**: membuat fondasi docs untuk proyek yang belum memilikinya.
+- **Record**: mencatat otomatis outcome implementasi material yang telah diverifikasi kecuali pengguna menolaknya.
 - **Synchronize**: menyelaraskan docs setelah perubahan implementasi.
 - **Reconstruct**: membangun kembali konteks dari kode dan bukti yang tersebar.
 - **Handoff**: mencatat status kerja, keputusan, risiko, dan langkah berikutnya.
@@ -15,9 +16,10 @@ Pisahkan fakta saat ini, keputusan yang diterima, riwayat, rencana, dan hal yang
 
 1. Nyatakan mode dan cakupan proyek.
 2. Baca kode, konfigurasi, tes, dan docs yang relevan sebagai bukti.
-3. Perbarui indeks `docs/README.md` dan dokumen inti di `docs/structure-of-app/` sesuai kebutuhan.
-4. Buat folder khusus hanya jika ada bukti dan kebutuhan nyata.
-5. Validasi tautan, istilah, status implementasi, dan kebocoran secret.
+3. Untuk pekerjaan implementasi, buat atau perbarui catatan outcome di `docs/implementation-timeline/<feature-domain>/` dengan nama file bertanggal yang spesifik, lalu pelihara indeks root dan domainnya.
+4. Perbarui dokumen inti di `docs/structure-of-app/` hanya ketika klaim current-state berubah.
+5. Buat folder khusus lain hanya jika ada bukti dan kebutuhan nyata.
+6. Validasi tautan, istilah, status implementasi, dan kebocoran secret.
 
 ## Contoh prompt
 
@@ -31,7 +33,7 @@ $superior-docs Synchronize docs setelah perubahan alur autentikasi pada branch i
 
 ## Kombinasi yang sesuai
 
-Gunakan setelah `superior-ui`, `superior-logic`, atau perubahan durable lain jika arsitektur, keputusan, kontrak, atau cara kerja proyek ikut berubah. Untuk prosedur lengkap, lanjutkan ke [bootstrap docs](../../04-bootstrap-project-docs.md), [sesi baru](../../05-start-a-new-session.md), dan [maintenance](../../06-maintain-project-docs.md).
+Gunakan secara otomatis setelah `superior-ui`, `superior-logic`, atau skill lain menghasilkan perubahan implementasi material yang telah diverifikasi. Pengguna dapat menolak dokumentasi secara eksplisit untuk tugas tersebut. Untuk prosedur lengkap, lanjutkan ke [bootstrap docs](../../04-bootstrap-project-docs.md), [sesi baru](../../05-start-a-new-session.md), dan [maintenance](../../06-maintain-project-docs.md).
 
 ## Hasil yang perlu diperiksa
 

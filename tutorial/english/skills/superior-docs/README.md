@@ -1,10 +1,11 @@
 # Using `superior-docs`
 
-This skill maintains project memory across sessions. Its four primary modes are Bootstrap, Synchronize, Reconstruct, and Handoff.
+This skill maintains project memory across sessions. Its five primary modes are Bootstrap, Record, Synchronize, Reconstruct, and Handoff.
 
 ## Choose the right mode
 
 - **Bootstrap**: establish a documentation foundation for a project that does not have one.
+- **Record**: automatically capture a verified material implementation outcome unless the user opts out.
 - **Synchronize**: align documentation after implementation changes.
 - **Reconstruct**: recover context from code and distributed evidence.
 - **Handoff**: record work status, decisions, risks, and next steps.
@@ -15,9 +16,10 @@ Keep current facts, accepted decisions, history, plans, and unknowns separate. D
 
 1. State the mode and project scope.
 2. Read relevant code, configuration, tests, and documentation as evidence.
-3. Update the `docs/README.md` index and core documents in `docs/structure-of-app/` as needed.
-4. Create specialized directories only when supported by evidence and a real need.
-5. Validate links, terminology, implementation status, and potential secret exposure.
+3. For implementation work, create or update the outcome record in `docs/implementation-timeline/<feature-domain>/` with a specific dated filename and maintain the root and domain indexes.
+4. Update the core documents in `docs/structure-of-app/` only when their current-state claims changed.
+5. Create other specialized directories only when supported by evidence and a real need.
+6. Validate links, terminology, implementation status, and potential secret exposure.
 
 ## Prompt examples
 
@@ -31,7 +33,7 @@ $superior-docs Synchronize documentation after the authentication-flow changes o
 
 ## Suitable combinations
 
-Use it after `superior-ui`, `superior-logic`, or another durable change when architecture, decisions, contracts, or project operation also changes. For complete procedures, continue to [documentation bootstrapping](../../04-bootstrap-project-docs.md), [new sessions](../../05-start-a-new-session.md), and [maintenance](../../06-maintain-project-docs.md).
+Use it automatically after `superior-ui`, `superior-logic`, or another skill produces a verified material implementation change. The user may explicitly opt out for the task. For complete procedures, continue to [documentation bootstrapping](../../04-bootstrap-project-docs.md), [new sessions](../../05-start-a-new-session.md), and [maintenance](../../06-maintain-project-docs.md).
 
 ## Result checks
 

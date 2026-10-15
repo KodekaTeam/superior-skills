@@ -13,6 +13,7 @@
 - Extensive visual guidance uses progressive disclosure through `references/`.
 - Each skill has a specific name and description to improve implicit invocation accuracy.
 - Shared baseline rules live in `AGENTS.md`; specialist details are loaded only when relevant.
+- Verified material implementation work is recorded in an indexed `docs/implementation-timeline/` by default, unless the user opts out.
 
 ## Structure
 

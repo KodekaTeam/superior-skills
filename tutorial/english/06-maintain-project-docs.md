@@ -1,6 +1,16 @@
 # 06 - Maintain Documentation After Changes
 
-Not every code edit requires a documentation update. Update documentation when a change affects knowledge that must persist across sessions.
+Every verified material implementation receives an outcome-oriented timeline record by default. The user may explicitly opt out. Supporting documents are updated only when their own durable claims or procedures change.
+
+## Automatic implementation record
+
+After a feature, fix, behavior change, security control, schema change, runtime configuration, or meaningful refactor:
+
+1. Create or update one record in `docs/implementation-timeline/<feature-domain>/` using a specific name such as `2026-10-15-fix-login-validation.md`.
+2. Create `docs/README.md`, the timeline index, and the feature-domain index when no documentation system exists.
+3. Record the outcome, implementation mechanism, decisions, verification actually run, limitations, and related docs.
+4. Skip prompts, chat transcripts, secrets, and file-by-file narration.
+5. Do not create documentation when the user explicitly asks to skip it.
 
 ## Update docs when these change
 
@@ -11,12 +21,13 @@ Not every code edit requires a documentation update. Update documentation when a
 - implementation limitations and maintenance risks;
 - historically meaningful milestones or releases.
 
-## Do not update docs merely because
+## Do not create an automatic record merely because
 
 - formatting or an internal rename does not change how the system is understood;
 - a refactor preserves every boundary and contract;
 - a conversation produced an idea that has not been accepted;
 - a commit has no durable impact.
+- the task was read-only, unsuccessful, documentation-only, or left no material change.
 
 ## Synchronization prompt
 
