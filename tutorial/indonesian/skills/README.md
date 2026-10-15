@@ -5,6 +5,7 @@ Indeks ini mencakup seluruh skill yang tersedia di `.agents/skills/`. Pilih skil
 | Skill | Gunakan untuk | Panduan |
 | --- | --- | --- |
 | `superior-accessibility` | Semantik, keyboard, fokus, kontras, status, dan zoom | [Buka](superior-accessibility/README.md) |
+| `superior-api-security` | Hardening REST API, boundary otorisasi, rate limiting, abuse control, dan verifikasi keamanan | [Buka](superior-api-security/README.md) |
 | `superior-comments` | Audit atau perapian komentar tanpa mengubah perilaku kode | [Buka](superior-comments/README.md) |
 | `superior-copy` | Teks produk dan pemasaran yang terlihat pengguna | [Buka](superior-copy/README.md) |
 | `superior-docs` | Bootstrap, sinkronisasi, rekonstruksi, dan handoff dokumentasi | [Buka](superior-docs/README.md) |

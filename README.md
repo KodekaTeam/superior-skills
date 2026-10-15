@@ -32,6 +32,7 @@ superior-skills/
         |-- superior-copy/
         |-- superior-comments/
         |-- superior-logic/
+        |-- superior-api-security/
         |-- superior-lean/
         `-- superior-docs/
 ```

@@ -5,6 +5,7 @@ This index covers every skill available in `.agents/skills/`. Select the skill t
 | Skill | Use it for | Guide |
 | --- | --- | --- |
 | `superior-accessibility` | Semantics, keyboard use, focus, contrast, status, and zoom | [Open](superior-accessibility/README.md) |
+| `superior-api-security` | REST API hardening, authorization boundaries, rate limiting, abuse controls, and security verification | [Open](superior-api-security/README.md) |
 | `superior-comments` | Auditing or refining comments without changing code behavior | [Open](superior-comments/README.md) |
 | `superior-copy` | User-facing product and marketing copy | [Open](superior-copy/README.md) |
 | `superior-docs` | Documentation bootstrapping, synchronization, reconstruction, and handoff | [Open](superior-docs/README.md) |

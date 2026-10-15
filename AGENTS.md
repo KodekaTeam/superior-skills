@@ -34,6 +34,7 @@ Codex discovers the skills under `.agents/skills`. Load only the entries that ma
 - Write or revise product-facing prose: `.agents/skills/superior-copy/SKILL.md`
 - Clean up code comments without changing behavior: `.agents/skills/superior-comments/SKILL.md`
 - Implement or review application, API, state, and business rules: `.agents/skills/superior-logic/SKILL.md`
+- Harden or review REST API security, rate limiting, authorization boundaries, abuse controls, or SSRF defenses: `.agents/skills/superior-api-security/SKILL.md`
 - Reduce over-engineering in a coding change: `.agents/skills/superior-lean/SKILL.md`
 - Create, reconstruct, or synchronize durable project documentation: `.agents/skills/superior-docs/SKILL.md`
 
@@ -42,6 +43,7 @@ Common combinations:
 - UI implementation: `superior-ui`, plus `superior-responsive` or `superior-accessibility` only when those concerns are substantial.
 - UI audit: `superior-ui-audit`; add accessibility only when the user requests an accessibility review.
 - Full-stack feature: `superior-ui` for presentation and `superior-logic` for behavior. Do not make the UI skill govern domain logic.
+- Security-sensitive API change: `superior-api-security` for threat-driven controls, plus `superior-logic` when business invariants, persistence, or idempotency also change.
 - Comment-only cleanup: `superior-comments` alone.
 
 ## Delivery baseline

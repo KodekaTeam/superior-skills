@@ -43,6 +43,8 @@ State a material assumption only when code and documentation cannot establish it
 - Use maintained libraries for credentials and cryptography. Never design custom token, encryption, signature, or secret-storage schemes.
 - Keep secrets, sensitive personal data, and payment details out of logs and user-visible errors.
 
+Load `superior-api-security` when API hardening, rate limiting, token security, abuse prevention, SSRF, or a dedicated security review is part of the request. Keep `superior-logic` responsible for domain contracts and invariants; use the security skill for threat-driven controls and negative verification.
+
 ## Keep failure observable
 
 - Handle an error at the layer that can recover, translate, or add useful context.
