@@ -38,6 +38,28 @@ foreach ($relativePath in $manifests) {
     }
 }
 
+try {
+    $portableManifest = Get-Content -Raw (Join-Path $root 'plugin.json') | ConvertFrom-Json
+    $expectedSchema = 'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json'
+    if ($portableManifest.'$schema' -ne $expectedSchema) {
+        Add-ValidationError "plugin.json must use Agent Plugins schema '$expectedSchema'."
+    }
+}
+catch {
+    Add-ValidationError "Unable to validate the portable plugin schema: $($_.Exception.Message)"
+}
+
+try {
+    $codexManifest = Get-Content -Raw (Join-Path $root '.codex-plugin/plugin.json') | ConvertFrom-Json
+    $shortDescription = [string]$codexManifest.interface.shortDescription
+    if ([string]::IsNullOrWhiteSpace($shortDescription) -or $shortDescription.Length -gt 30) {
+        Add-ValidationError '.codex-plugin/plugin.json interface.shortDescription must contain 1 to 30 characters.'
+    }
+}
+catch {
+    Add-ValidationError "Unable to validate Codex interface metadata: $($_.Exception.Message)"
+}
+
 $marketplaces = @(
     '.agents/plugins/marketplace.json',
     '.claude-plugin/marketplace.json',

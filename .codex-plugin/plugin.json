@@ -9,7 +9,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Superior Skills",
-    "shortDescription": "Contextual software engineering workflows",
+    "shortDescription": "Contextual engineering skills",
     "longDescription": "Build, review, secure, and document software changes using project evidence and focused reusable skills.",
     "developerName": "KodekaTeam",
     "category": "Productivity"
