@@ -29,7 +29,7 @@
     "longDescription": "Review, measure, design data, diagnose, build, test, deliver, operate reliably, secure, and document software changes using project evidence and focused reusable skills.",
     "developerName": "KodekaTeam",
     "category": "Productivity",
-    "composerIcon": "./assets/profile.png",
-    "logo": "./assets/profile.png"
+    "composerIcon": "./assets/logo-colored-transparent.png",
+    "logo": "./assets/logo-colored-transparent.png"
   }
 }

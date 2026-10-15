@@ -5,5 +5,7 @@
   "author": {
     "name": "KodekaTeam"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "logo": "assets/logo-colored-transparent.png",
+  "skills": "./skills/"
 }

@@ -6,6 +6,6 @@
     "name": "KodekaTeam"
   },
   "license": "MIT",
-  "logo": "assets/profile.png",
+  "logo": "assets/logo-colored-transparent.png",
   "skills": "./skills/"
 }
