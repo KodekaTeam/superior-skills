@@ -28,7 +28,6 @@
 ```text
 superior-skills/
 |-- VERSION
-|-- CHANGELOG.md
 |-- CODE_OF_CONDUCT.md
 |-- CONTRIBUTING.md
 |-- SECURITY.md
@@ -161,6 +160,6 @@ The briefs and rationale used to develop the documentation workflow live in `pri
 
 Run `pwsh -File scripts/validate-plugin.ps1` before publishing.
 
-Implementation history is indexed in [`docs/implementation-timeline/`](docs/implementation-timeline/README.md).
+When `superior-docs` records implementation work, it creates and maintains the indexed `docs/implementation-timeline/` structure inside the target repository. Internal maintainer records in this package are intentionally not published.
 
 Explicit user instructions and more specific project rules always take precedence over this package's general preferences.

@@ -43,9 +43,9 @@ When adding or renaming a skill, update every affected integration point:
 - the structure and usage information in both package READMEs;
 - English and Indonesian per-skill indexes and tutorials;
 - combination guidance when the skill has meaningful collaborators;
-- `CHANGELOG.md` under `Unreleased`.
+- release notes when the change is included in a published version.
 
-Do not change `VERSION` unless a maintainer explicitly requests a release. Release version, changelog date, and Git tag must be coordinated rather than updated independently.
+Do not change `VERSION` unless a maintainer explicitly requests a release. Release version, manifest versions, release notes, and Git tag must be coordinated rather than updated independently.
 
 ## Documentation changes
 

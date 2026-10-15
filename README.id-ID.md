@@ -29,7 +29,6 @@
 ```text
 superior-skills/
 |-- VERSION
-|-- CHANGELOG.md
 |-- CODE_OF_CONDUCT.md
 |-- CONTRIBUTING.md
 |-- SECURITY.md
@@ -162,6 +161,6 @@ Brief dan rationale yang digunakan untuk mengembangkan workflow dokumentasi bera
 
 Jalankan `pwsh -File scripts/validate-plugin.ps1` sebelum publikasi.
 
-Riwayat implementasi diindeks dalam [`docs/implementation-timeline/`](docs/implementation-timeline/README.md).
+Ketika `superior-docs` mencatat pekerjaan implementasi, skill tersebut membuat dan memelihara struktur `docs/implementation-timeline/` yang terindeks di repository target. Catatan internal maintainer dalam paket ini memang tidak dipublikasikan.
 
 Instruksi eksplisit pengguna dan aturan proyek yang lebih dekat selalu mengalahkan preferensi umum paket ini.
