@@ -19,11 +19,13 @@
 
 ```text
 superior-skills/
+|-- VERSION
+|-- CHANGELOG.md
 |-- AGENTS.md
 |-- INSTALL.md
 |-- principles/
-    |-- README.md
-    |-- documentation-continuity.md
+|   |-- README.md
+|   `-- documentation-continuity.md
 `-- .agents/
     `-- skills/
         |-- superior-ui/
