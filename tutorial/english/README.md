@@ -29,7 +29,7 @@ Read tutorials 04-06. They explain how `superior-docs`, `docs/README.md`, and th
 
 ### Superior package maintainers
 
-Read all tutorials, then consult [`../../principles/`](../../principles/) for package rationale and [`../../.agents/skills/`](../../.agents/skills/) for runtime instructions.
+Read all tutorials, then consult [`../../principles/`](../../principles/) for package rationale and [`../../skills/`](../../skills/) for canonical runtime instructions.
 
 ## Practical rules
 

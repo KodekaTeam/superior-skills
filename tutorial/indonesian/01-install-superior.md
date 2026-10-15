@@ -2,7 +2,7 @@
 
 ## Tujuan
 
-Membuat `AGENTS.md` dan seluruh skill Superior tersedia di repository target.
+Membuat `AGENTS.md` dan seluruh skill Superior tersedia di repository target tanpa instalasi plugin.
 
 ## Struktur tujuan
 
@@ -18,7 +18,7 @@ project/
 
 ## Langkah
 
-1. Salin folder `.agents/` dari paket Superior ke root repository target.
+1. Buat `.agents/skills/` pada repository target, lalu salin seluruh folder dari directory root `skills/` milik paket Superior ke dalamnya.
 2. Jika proyek belum memiliki `AGENTS.md`, salin `AGENTS.md` dari paket.
 3. Jika proyek sudah memiliki `AGENTS.md`, gabungkan baseline Superior tanpa menghapus command, aturan domain, atau struktur proyek yang sudah ada.
 4. Buka Codex dari root repository atau salah satu subfolder di dalam repository tersebut.
@@ -38,4 +38,4 @@ $superior-docs Jelaskan mode yang tersedia tanpa mengubah file.
 
 Codex dapat menemukan skill bernama `superior-*`, dan baseline proyek dibaca sebelum agent mulai bekerja.
 
-Untuk instalasi user-level, lihat `../INSTALL.md`.
+Untuk instalasi user-level, lihat [`../../INSTALL.md`](../../INSTALL.md).

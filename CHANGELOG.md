@@ -9,8 +9,15 @@ The project follows [Semantic Versioning](https://semver.org/).
 ### Added
 
 - Community contribution guidelines, code of conduct, security policy, and MIT License.
+- Portable Agent Plugin packaging with root `plugin.json` and canonical `skills/` content.
+- Codex, Cursor, and Claude Code compatibility manifests and local marketplace catalogs.
+- Cross-platform plugin installation guidance and package validation tooling.
 
-## [v1.0.0] - 2026-10-15
+### Changed
+
+- Consolidated packaged skill content under the canonical root `skills/` directory and removed the duplicated `.agents/skills/` mirror.
+
+## [v1.5.0] - 2026-10-15
 
 ### Added
 

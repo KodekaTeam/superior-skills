@@ -29,7 +29,7 @@ Baca tutorial 04-06. Ini menjelaskan pembagian tugas antara `superior-docs`, `do
 
 ### Maintainer paket Superior
 
-Baca seluruh tutorial, lalu lihat `../principles/` untuk rationale paket dan `.agents/skills/` untuk instruksi runtime.
+Baca seluruh tutorial, lalu lihat [`../../principles/`](../../principles/) untuk rationale paket dan [`../../skills/`](../../skills/) untuk instruksi runtime kanonis.
 
 ## Aturan praktis
 

@@ -1,6 +1,6 @@
 # Per-Skill Tutorials
 
-This index covers every skill available in `.agents/skills/`. Select the skill that most directly owns the work, and add another only when the task genuinely crosses responsibility boundaries.
+This index covers every canonical skill available in `skills/`. Select the skill that most directly owns the work, and add another only when the task genuinely crosses responsibility boundaries.
 
 | Skill | Use it for | Guide |
 | --- | --- | --- |

@@ -1,6 +1,6 @@
 # Tutorial Per Skill
 
-Indeks ini mencakup seluruh skill yang tersedia di `.agents/skills/`. Pilih skill yang paling langsung memiliki pekerjaan; tambahkan skill lain hanya ketika tugas memang melintasi batas tanggung jawab.
+Indeks ini mencakup seluruh skill kanonis di `skills/`. Pilih skill yang paling langsung memiliki pekerjaan; tambahkan skill lain hanya ketika tugas memang melintasi batas tanggung jawab.
 
 | Skill | Gunakan untuk | Panduan |
 | --- | --- | --- |

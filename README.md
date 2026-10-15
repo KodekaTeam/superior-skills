@@ -12,6 +12,7 @@
 - UI creation and UI auditing are separate, preventing implementation requests from turning into read-only audits.
 - Extensive visual guidance uses progressive disclosure through `references/`.
 - Each skill has a specific name and description to improve implicit invocation accuracy.
+- One canonical `skills/` tree is packaged for Codex, Cursor, and Claude Code.
 - Shared baseline rules live in `AGENTS.md`; specialist details are loaded only when relevant.
 - Verified material implementation work is recorded in an indexed `docs/implementation-timeline/` by default, unless the user opts out.
 
@@ -26,22 +27,19 @@ superior-skills/
 |-- SECURITY.md
 |-- LICENSE
 |-- AGENTS.md
+|-- CLAUDE.md
 |-- INSTALL.md
+|-- plugin.json
+|-- skills/                    # Canonical portable skills
+|-- scripts/                   # Package validation
+|-- .codex-plugin/             # Codex compatibility manifest
+|-- .cursor-plugin/            # Cursor manifest and repository marketplace
+|-- .claude-plugin/            # Claude Code manifest and marketplace
 |-- principles/
 |   |-- README.md
 |   `-- documentation-continuity.md
 `-- .agents/
-    `-- skills/
-        |-- superior-ui/
-        |-- superior-ui-audit/
-        |-- superior-responsive/
-        |-- superior-accessibility/
-        |-- superior-copy/
-        |-- superior-comments/
-        |-- superior-logic/
-        |-- superior-api-security/
-        |-- superior-lean/
-        `-- superior-docs/
+    `-- plugins/               # Codex repository marketplace
 ```
 
 ## Community and governance
@@ -53,7 +51,9 @@ superior-skills/
 
 ## Usage
 
-Copy `AGENTS.md` and `.agents/` into the target repository root. If the repository already has an `AGENTS.md`, merge the relevant sections without removing existing project commands, domain rules, or validation instructions.
+Install the repository as a plugin in Codex, Cursor, or Claude Code using the platform-specific instructions in [`INSTALL.md`](INSTALL.md). The portable entrypoint is [`plugin.json`](plugin.json), and canonical skill definitions live under [`skills/`](skills/).
+
+Standalone installation remains supported: copy the folders inside `skills/` to `.agents/skills/` in the target repository. If the repository already has an `AGENTS.md`, merge the relevant sections without removing existing project commands, domain rules, or validation instructions.
 
 Skills can be invoked explicitly, such as with `$superior-ui`, while their descriptions are also designed for automatic selection. Installation details are available in `INSTALL.md`.
 
@@ -71,6 +71,12 @@ Superior prioritizes:
 - small solutions that preserve correctness;
 - verification proportionate to the risk of the change.
 
-The briefs and rationale used to develop the documentation workflow live in `principles/`. That directory is intended for package maintainers; portable runtime instructions remain in `.agents/skills/superior-docs/`.
+The briefs and rationale used to develop the documentation workflow live in `principles/`. That directory is intended for package maintainers; portable runtime instructions live in `skills/superior-docs/`.
+
+## Package validation
+
+Run `pwsh -File scripts/validate-plugin.ps1` before publishing.
+
+Implementation history is indexed in [`docs/implementation-timeline/`](docs/implementation-timeline/README.md).
 
 Explicit user instructions and more specific project rules always take precedence over this package's general preferences.

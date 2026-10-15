@@ -25,4 +25,4 @@ A future AI agent or human maintainer should be able to recover the product's cu
 
 ## Why the runtime files live elsewhere
 
-The original prompt and screenshot are valuable design evidence for this package, but an installed skill must remain portable. Therefore the executable instruction set and detailed references live under `.agents/skills/superior-docs/`; this principles directory remains maintainer-facing provenance.
+The original prompt and screenshot are valuable design evidence for this package, but an installed skill must remain portable. Therefore the executable instruction set and detailed references live under `skills/superior-docs/`, while this principles directory remains maintainer-facing provenance.

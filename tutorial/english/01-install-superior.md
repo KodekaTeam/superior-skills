@@ -2,7 +2,7 @@
 
 ## Objective
 
-Make `AGENTS.md` and all Superior skills available in the target repository.
+Make `AGENTS.md` and all Superior skills available in a target repository without using plugin installation.
 
 ## Target structure
 
@@ -18,7 +18,7 @@ project/
 
 ## Steps
 
-1. Copy the `.agents/` directory from the Superior package into the target repository root.
+1. Create `.agents/skills/` in the target repository and copy every folder from the Superior package's root `skills/` directory into it.
 2. If the project does not have an `AGENTS.md`, copy the package version.
 3. If the project already has an `AGENTS.md`, merge the Superior baseline without removing existing commands, domain rules, or project structure guidance.
 4. Open Codex from the repository root or one of its descendants.

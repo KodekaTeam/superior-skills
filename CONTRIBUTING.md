@@ -39,6 +39,7 @@ For suspected vulnerabilities, do not open a public issue. Follow [SECURITY.md](
 When adding or renaming a skill, update every affected integration point:
 
 - routing in `AGENTS.md`;
+- the canonical skill under `skills/`;
 - the structure and usage information in both package READMEs;
 - English and Indonesian per-skill indexes and tutorials;
 - combination guidance when the skill has meaningful collaborators;
@@ -59,7 +60,7 @@ Do not change `VERSION` unless a maintainer explicitly requests a release. Relea
 
 Before submitting:
 
-1. validate each changed skill with the available skill validator;
+1. run `pwsh -File scripts/validate-plugin.ps1` and validate each substantially changed skill with the available skill validator;
 2. inspect frontmatter, name-directory consistency, and reference paths;
 3. search for placeholders, stale skill names, broken links, and encoding artifacts;
 4. exercise changed scripts and meaningful behavior when applicable;
