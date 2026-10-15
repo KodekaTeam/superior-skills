@@ -71,6 +71,7 @@ Do not claim a production-only incident is resolved solely because a local test 
 
 ## Combine skills narrowly
 
+- Use `superior-code-review` when the primary task is to assess a change set rather than diagnose an observed failure.
 - Use `superior-logic` when the confirmed repair changes domain rules, persistence, state transitions, or API behavior.
 - Use `superior-database` when the confirmed cause requires schema, query, transaction, migration, or data-repair work.
 - Use `superior-performance` when the confirmed cause leads to measured optimization, capacity analysis, or a performance budget.

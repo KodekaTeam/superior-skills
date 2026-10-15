@@ -33,6 +33,7 @@ The portable plugin discovers its skills under the canonical root `skills/` dire
 - Check accessibility, keyboard use, focus, contrast, or inclusive states: `superior-accessibility`
 - Write or revise product-facing prose: `superior-copy`
 - Clean up code comments without changing behavior: `superior-comments`
+- Review a diff, commit, branch, pull request, or working tree for actionable defects: `superior-code-review`
 - Implement or review application, API, state, and business rules: `superior-logic`
 - Diagnose a concrete software failure whose cause is uncertain: `superior-debugging`
 - Design, implement, repair, or review automated tests and test reliability: `superior-testing`
@@ -46,6 +47,7 @@ Common combinations:
 
 - UI implementation: `superior-ui`, plus `superior-responsive` or `superior-accessibility` only when those concerns are substantial.
 - UI audit: `superior-ui-audit`; add accessibility only when the user requests an accessibility review.
+- General code review: `superior-code-review`; add a specialized domain skill only when that concern requires substantial depth.
 - Full-stack feature: `superior-ui` for presentation and `superior-logic` for behavior. Do not make the UI skill govern domain logic.
 - Uncertain bug or incident: `superior-debugging`; add `superior-logic` only when the confirmed repair changes application behavior.
 - Test strategy or regression work: `superior-testing`; add the domain skill only when production behavior is also being changed or reviewed.

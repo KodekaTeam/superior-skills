@@ -9,6 +9,7 @@ Gabungkan skills berdasarkan concern yang benar-benar ada, bukan berdasarkan jum
 | Membuat halaman baru | `superior-ui` | `superior-responsive`, `superior-accessibility`, `superior-copy` |
 | Audit visual read-only | `superior-ui-audit` | `superior-accessibility` jika diminta |
 | Fitur full-stack | `superior-logic` + `superior-ui` | `superior-docs` jika pengetahuan durable berubah |
+| Review umum terhadap change set | `superior-code-review` | Skill domain khusus hanya ketika concern tersebut memerlukan kedalaman substansial |
 | Bug yang belum pasti atau insiden runtime | `superior-debugging` | `superior-logic` untuk perbaikan behavior terkonfirmasi; `superior-testing` untuk desain regresi khusus |
 | Perubahan schema, transaction, atau migration | `superior-database` | `superior-logic` untuk behavior aplikasi; `superior-testing` untuk desain test compatibility atau concurrency yang substansial |
 | Pekerjaan performa atau capacity terukur | `superior-performance` | Skill database, UI, atau logic hanya ketika kontrak miliknya juga berubah |

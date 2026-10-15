@@ -9,6 +9,7 @@ Combine skills according to the concerns actually present, not according to the 
 | Build a new page | `superior-ui` | `superior-responsive`, `superior-accessibility`, `superior-copy` |
 | Read-only visual audit | `superior-ui-audit` | `superior-accessibility` when requested |
 | Full-stack feature | `superior-logic` + `superior-ui` | `superior-docs` when durable knowledge changes |
+| General change-set review | `superior-code-review` | A specialized domain skill only when that concern requires substantial depth |
 | Uncertain bug or runtime incident | `superior-debugging` | `superior-logic` for a confirmed behavioral repair; `superior-testing` for dedicated regression design |
 | Schema, transaction, or migration change | `superior-database` | `superior-logic` for application behavior; `superior-testing` for substantial compatibility or concurrency test design |
 | Measured performance or capacity work | `superior-performance` | The database, UI, or logic skill only when its owned contract also changes |

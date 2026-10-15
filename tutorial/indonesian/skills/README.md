@@ -6,6 +6,7 @@ Indeks ini mencakup seluruh skill kanonis di `skills/`. Pilih skill yang paling 
 | --- | --- | --- |
 | `superior-accessibility` | Semantik, keyboard, fokus, kontras, status, dan zoom | [Buka](superior-accessibility/README.md) |
 | `superior-api-security` | Hardening REST API, boundary otorisasi, rate limiting, abuse control, dan verifikasi keamanan | [Buka](superior-api-security/README.md) |
+| `superior-code-review` | Review berbasis evidence untuk diff, commit, branch, pull request, dan working tree | [Buka](superior-code-review/README.md) |
 | `superior-comments` | Audit atau perapian komentar tanpa mengubah perilaku kode | [Buka](superior-comments/README.md) |
 | `superior-copy` | Teks produk dan pemasaran yang terlihat pengguna | [Buka](superior-copy/README.md) |
 | `superior-database` | Schema, query, index, transaction, migration, dan backfill | [Buka](superior-database/README.md) |

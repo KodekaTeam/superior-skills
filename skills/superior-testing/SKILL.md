@@ -67,6 +67,7 @@ Report:
 
 ## Combine skills narrowly
 
+- Use `superior-code-review` when tests are one risk area within a broader change-set review.
 - Use `superior-debugging` when a failing test is evidence of an unknown production or environment cause rather than a test-design problem.
 - Use `superior-database` when a migration, real-engine integration, transaction, or data-compatibility contract owns the behavior under test.
 - Use `superior-performance` when benchmark methodology, performance budgets, capacity checks, or regression thresholds are primary.

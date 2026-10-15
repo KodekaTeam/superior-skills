@@ -7,6 +7,8 @@ description: Implement or review application behavior, APIs, state transitions, 
 
 Keep correctness visible from input to observable outcome. Fit the solution to the repository's existing architecture and update every affected side of a contract together.
 
+Use `superior-code-review` instead when the primary outcome is findings on a diff, commit, branch, pull request, or working tree. Use this skill for a focused domain-logic review or for implementing confirmed behavioral changes.
+
 ## Model the behavior
 
 Before choosing code, identify:
