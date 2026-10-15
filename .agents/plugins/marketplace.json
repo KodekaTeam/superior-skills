@@ -7,8 +7,9 @@
     {
       "name": "superior-skills",
       "source": {
-        "source": "local",
-        "path": "./"
+        "source": "url",
+        "url": "https://github.com/KodekaTeam/superior-skills.git",
+        "ref": "main"
       },
       "policy": {
         "installation": "AVAILABLE",
