@@ -11,7 +11,14 @@ Superior Skills is a skills-only portable Agent Plugin. It does not install an M
 
 ## Codex and ChatGPT Work
 
-For repository-local discovery, clone or copy the package into a trusted repository and keep `.agents/plugins/marketplace.json` at that repository root. The marketplace exposes the package at `./` as `superior-skills`.
+Add the GitHub repository as a Codex marketplace, then install the plugin:
+
+```shell
+codex plugin marketplace add KodekaTeam/superior-skills
+codex plugin add superior-skills@superior-skills
+```
+
+For repository-local development, clone or copy the package into a trusted repository and keep `.agents/plugins/marketplace.json` at that repository root. The marketplace exposes the package at `./` as `superior-skills`.
 
 In supported Codex clients, refresh the plugin marketplace, select **Superior Skills**, and install it. The root portable manifest and `skills/` directory are the canonical package content.
 
@@ -29,6 +36,13 @@ If the project already has `AGENTS.md`, merge the portable baseline without remo
 
 ## Cursor
 
+For a Git-backed installation:
+
+1. Open **Cursor Settings → Plugins**.
+2. Paste `https://github.com/KodekaTeam/superior-skills` into the plugin search box.
+3. Open **Superior Skills** and select **Install**.
+4. Run **Developer: Reload Window** before testing the installed skills.
+
 For local testing:
 
 1. Copy this complete package directory to `~/.cursor/plugins/local/superior-skills/`.
@@ -39,13 +53,20 @@ Do not use a symlink to a directory outside `~/.cursor/plugins/local`; Cursor re
 
 ## Claude Code
 
+For a Git-backed marketplace installation, run these commands inside Claude Code:
+
+```text
+/plugin marketplace add KodekaTeam/superior-skills
+/plugin install superior-skills@superior-skills
+```
+
 During local development, load the package directory directly:
 
 ```text
 claude --plugin-dir /absolute/path/to/superior-skills
 ```
 
-For marketplace installation, add the repository or directory containing `.claude-plugin/marketplace.json`, then install `superior-skills@superior-skills`. Plugin skills are namespaced in Claude Code, for example:
+Plugin skills are namespaced in Claude Code, for example:
 
 ```text
 /superior-skills:superior-ui
@@ -58,6 +79,65 @@ For marketplace installation, add the repository or directory containing `.claud
 ## User-scoped standalone skills
 
 When a host supports standalone Agent Skills but not plugin installation, copy each folder under `skills/` to that host's user skill directory. Host-specific instruction files must be merged separately; do not blindly replace an existing `AGENTS.md` or `CLAUDE.md`.
+
+## Updating
+
+### Codex
+
+Refresh the Git marketplace snapshot:
+
+```shell
+codex plugin marketplace upgrade superior-skills
+```
+
+Restart the Codex client or start a new conversation so the refreshed skills are loaded. If an older cached installation remains active, reinstall it explicitly:
+
+```shell
+codex plugin remove superior-skills@superior-skills
+codex plugin add superior-skills@superior-skills
+```
+
+### Cursor
+
+Open **Cursor Settings → Plugins**, locate **Superior Skills**, then use the available update action. If no update action is shown, uninstall and reinstall the repository plugin. Run **Developer: Reload Window** afterward.
+
+For local development copies under `~/.cursor/plugins/local/superior-skills/`, replace the old package contents with the latest repository contents before reloading Cursor.
+
+### Claude Code
+
+Refresh the marketplace and update the installed plugin from a terminal:
+
+```shell
+claude plugin marketplace update superior-skills
+claude plugin update superior-skills@superior-skills
+```
+
+Start a new Claude Code session after the update.
+
+### Standalone installation
+
+Standalone copies do not update automatically. Replace the installed `superior-*` directories with the latest directories from `skills/`, while preserving unrelated skills and project instructions.
+
+## Removing
+
+For Codex:
+
+```shell
+codex plugin remove superior-skills@superior-skills
+codex plugin marketplace remove superior-skills
+```
+
+For Claude Code, uninstall the plugin through `/plugin`, then remove the `superior-skills` marketplace if it is no longer needed. For Cursor, remove **Superior Skills** from **Cursor Settings → Plugins**.
+
+For standalone installations, delete only the copied `superior-*` skill directories. Remove merged `AGENTS.md` or `CLAUDE.md` content manually and carefully; do not delete unrelated project instructions.
+
+## Troubleshooting
+
+- **Plugin not found:** verify that root `plugin.json` still uses `https://agent-plugins.org/schemas/1.0.0/plugin.schema.json`. The schema version is independent from the Superior release version.
+- **An update is not visible:** refresh the marketplace, reload the host, and start a new session. Existing sessions may retain previously loaded skill instructions.
+- **A skill does not trigger automatically:** invoke it explicitly, such as `$superior-ui` in compatible hosts or `/superior-skills:superior-ui` in Claude Code.
+- **Project instructions disappeared:** restore the project's original `AGENTS.md` or `CLAUDE.md`, then merge Superior's baseline instead of replacing the file.
+- **Private repository access fails:** authenticate Git for the same operating-system account that runs the agent host.
 
 ## Maintainer validation
 

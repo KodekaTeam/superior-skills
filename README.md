@@ -2,9 +2,16 @@
   <img src="assets/profile.png" alt="Superior" width="240">
 </p>
 
-# Superior
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/KodekaTeam/superior-skills.svg" alt="License: MIT"></a>
+  <a href="https://github.com/KodekaTeam/superior-skills/releases"><img src="https://img.shields.io/github/v/release/KodekaTeam/superior-skills?label=version&color=1f6feb" alt="Version"></a>
+</p>
 
+<h1 align="center">Superior Skills</h1>
+
+<p align="center">
 `superior-skills` is a reusable instruction package for producing software changes that are contextual, evidence-based, and free from a generic template feel. It is not a collection of stylistic prohibitions. Its core principle is to make decisions from project evidence, preserve real functionality, and verify the resulting changes.
+</p>
 
 ## Key differences
 
@@ -49,15 +56,92 @@ superior-skills/
 - [Security policy](SECURITY.md)
 - [MIT License](LICENSE)
 
+## Install
+
+Superior ships as a portable, skills-only plugin. Choose the host you use, then start a new agent session after installation.
+
+### Codex
+
+```shell
+codex plugin marketplace add KodekaTeam/superior-skills
+codex plugin add superior-skills@superior-skills
+```
+
+You can also add the repository from the Codex plugin marketplace UI and select **Superior Skills**.
+
+### Cursor
+
+Open **Cursor Settings → Plugins**, paste the repository URL below into the plugin search box, then install **Superior Skills**:
+
+```text
+https://github.com/KodekaTeam/superior-skills
+```
+
+### Claude Code
+
+Run these commands inside Claude Code:
+
+```text
+/plugin marketplace add KodekaTeam/superior-skills
+/plugin install superior-skills@superior-skills
+```
+
+### Standalone Agent Skills
+
+For agents without plugin support, copy the folders inside `skills/` into the agent's project-level or user-level skills directory. For Codex-compatible project layouts, that directory is commonly `.agents/skills/`.
+
+If the target already has an `AGENTS.md` or `CLAUDE.md`, merge the relevant sections instead of replacing project-specific commands and rules.
+
+See [`INSTALL.md`](INSTALL.md) for local development, update, removal, and troubleshooting instructions. Step-by-step guides are also available in [`tutorial/english/`](tutorial/english/README.md).
+
+## Update
+
+Plugin installations keep their own cached copy. Refresh the marketplace, update the plugin when the host provides a separate update command, then start a new session.
+
+### Codex
+
+```shell
+codex plugin marketplace upgrade superior-skills
+```
+
+### Claude Code
+
+```shell
+claude plugin marketplace update superior-skills
+claude plugin update superior-skills@superior-skills
+```
+
+### Cursor
+
+Open **Cursor Settings → Plugins**, locate **Superior Skills**, and select the available update or reinstall action. Run **Developer: Reload Window** afterward.
+
+Standalone copies do not update automatically; replace the installed `superior-*` skill folders with the latest folders from this repository.
+
 ## Usage
 
-Install the repository as a plugin in Codex, Cursor, or Claude Code using the platform-specific instructions in [`INSTALL.md`](INSTALL.md). The portable entrypoint is [`plugin.json`](plugin.json), and canonical skill definitions live under [`skills/`](skills/).
+Skills are selected automatically from the task context or can be invoked explicitly, for example with `$superior-ui`, `$superior-api-security`, or `$superior-docs`. The portable entrypoint is [`plugin.json`](plugin.json), and canonical skill definitions live under [`skills/`](skills/).
 
-Standalone installation remains supported: copy the folders inside `skills/` to `.agents/skills/` in the target repository. If the repository already has an `AGENTS.md`, merge the relevant sections without removing existing project commands, domain rules, or validation instructions.
+## FAQ
 
-Skills can be invoked explicitly, such as with `$superior-ui`, while their descriptions are also designed for automatic selection. Installation details are available in `INSTALL.md`.
+### Does Superior install an MCP server or require credentials?
 
-Step-by-step guides are available in [`tutorial/english/`](tutorial/english/README.md), covering installation and routing as well as documentation bootstrapping and session continuity.
+No. Superior is currently a skills-only plugin. It does not install an MCP server, lifecycle hook, credential, or external service.
+
+### Where are the skills installed?
+
+Plugin hosts normally install a cached plugin package and read its root `skills/` directory. They do not need to create `.agents/skills/` inside every target project. The `.agents/skills/` path is only a standalone fallback.
+
+### Why is an updated skill not active yet?
+
+Refresh or update the marketplace and start a new conversation or agent session. Existing sessions may retain the skill version loaded when the session began.
+
+### Does Superior write implementation documentation automatically?
+
+For material, verified implementation work, `superior-docs` records a focused entry under `docs/implementation-timeline/<feature>/` when appropriate. An explicit request not to create documentation always takes precedence.
+
+### Can I install only one skill?
+
+The plugin installs the complete package so routing and shared references remain consistent. For a standalone setup, individual `superior-*` folders can be copied, but any referenced files must be copied with them.
 
 ## Output principles
 
