@@ -5,6 +5,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/github/license/KodekaTeam/superior-skills.svg" alt="License: MIT"></a>
   <a href="https://github.com/KodekaTeam/superior-skills/releases"><img src="https://img.shields.io/github/v/release/KodekaTeam/superior-skills?label=version&color=1f6feb" alt="Version"></a>
+  <a href="https://skills.sh/kodekateam/superior-skills"><img src="https://skills.sh/b/kodekateam/superior-skills" alt="Skills.sh"></a>
 </p>
 
 <h1 align="center">Superior Skills</h1>
