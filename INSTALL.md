@@ -9,6 +9,22 @@ Superior Skills is a skills-only portable Agent Plugin. It does not install an M
 - `.codex-plugin/`, `.cursor-plugin/`, and `.claude-plugin/` provide host-specific compatibility and marketplace metadata.
 - `.agents/plugins/marketplace.json` exposes the package to a repository-scoped Codex marketplace.
 
+## Skills CLI (skills.sh)
+
+With Node.js and npm available, install Superior Skills directly into a supported agent through the [Skills CLI](https://www.skills.sh/docs/cli):
+
+```shell
+npx skills add KodekaTeam/superior-skills
+```
+
+The interactive flow lets you select individual skills, target agents, and project or global scope. Project scope is the default. To make the selected skills available across projects, use:
+
+```shell
+npx skills add KodekaTeam/superior-skills -g
+```
+
+This installs standalone skills into the selected agent directories. It does not install the host-specific plugin manifests or marketplace entry described below.
+
 ## Codex and ChatGPT Work
 
 Add the GitHub repository as a Codex marketplace, then install the plugin:
@@ -82,6 +98,16 @@ When a host supports standalone Agent Skills but not plugin installation, copy e
 
 ## Updating
 
+### Skills CLI
+
+Update skills installed through `npx skills` with:
+
+```shell
+npx skills update
+```
+
+The CLI lets you choose the applicable project or global scope. Start a new agent session after the update.
+
 ### Codex
 
 Refresh the Git marketplace snapshot:
@@ -119,6 +145,12 @@ Start a new Claude Code session after the update.
 Standalone copies do not update automatically. Replace the installed `superior-*` directories with the latest directories from `skills/`, while preserving unrelated skills and project instructions.
 
 ## Removing
+
+For Skills CLI installations, remove skills interactively so only the intended agent and scope are affected:
+
+```shell
+npx skills remove
+```
 
 For Codex:
 

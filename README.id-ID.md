@@ -59,7 +59,17 @@ superior-skills/
 
 ## Instalasi
 
-Superior didistribusikan sebagai plugin portable yang hanya berisi skills. Pilih host yang digunakan, lalu mulai sesi agent baru setelah instalasi.
+Superior dapat dipasang sebagai Agent Skills standalone melalui Skills CLI atau sebagai plugin portable melalui host yang didukung. Mulai sesi agent baru setelah instalasi.
+
+### Skills CLI
+
+Instal dari [skills.sh](https://skills.sh/kodekateam/superior-skills) menggunakan `npx`:
+
+```shell
+npx skills add KodekaTeam/superior-skills
+```
+
+Installer interaktif memungkinkan pemilihan skill, target agent, serta scope proyek atau global. Gunakan pilihan khusus host di bawah jika ingin memasang paket plugin.
 
 ### Codex
 
@@ -97,7 +107,13 @@ Lihat [`INSTALL.md`](INSTALL.md) untuk instalasi pengembangan lokal, update, pen
 
 ## Update
 
-Instalasi plugin menyimpan salinan tersendiri di cache host. Refresh marketplace, update plugin jika host menyediakan perintah terpisah, lalu mulai sesi baru.
+Gunakan metode update yang sesuai dengan instalasinya. Instalasi plugin menyimpan salinan tersendiri di cache host, jadi refresh marketplace dan mulai sesi baru setelahnya.
+
+### Skills CLI
+
+```shell
+npx skills update
+```
 
 ### Codex
 

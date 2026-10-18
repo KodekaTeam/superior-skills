@@ -58,7 +58,17 @@ superior-skills/
 
 ## Install
 
-Superior ships as a portable, skills-only plugin. Choose the host you use, then start a new agent session after installation.
+Superior can be installed as standalone Agent Skills through the Skills CLI or as a portable plugin through a supported host. Start a new agent session after installation.
+
+### Skills CLI
+
+Install from [skills.sh](https://skills.sh/kodekateam/superior-skills) with `npx`:
+
+```shell
+npx skills add KodekaTeam/superior-skills
+```
+
+The interactive installer lets you choose the skills, target agents, and project or global scope. Use the host-specific options below when you want the packaged plugin instead.
 
 ### Codex
 
@@ -96,7 +106,13 @@ See [`INSTALL.md`](INSTALL.md) for local development, update, removal, and troub
 
 ## Update
 
-Plugin installations keep their own cached copy. Refresh the marketplace, update the plugin when the host provides a separate update command, then start a new session.
+Use the update method that matches the installation. Plugin installations keep their own cached copy, so refresh the marketplace and start a new session afterward.
+
+### Skills CLI
+
+```shell
+npx skills update
+```
 
 ### Codex
 
