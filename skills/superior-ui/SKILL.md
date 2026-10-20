@@ -42,6 +42,8 @@ Read [references/motion-and-rendering-performance.md](references/motion-and-rend
 - Let repeated components reflect repeated content. Do not force unlike information into identical cards.
 - Keep responsive and accessibility behavior intact. Load the dedicated skills when either concern is a substantial part of the request.
 
+Load `superior-ux` when the primary work is a journey, information architecture, task flow, cross-screen continuity, feedback, or recovery contract. Keep ordinary page hierarchy and visual interaction design here.
+
 ## Protect product integrity
 
 Read [references/product-integrity.md](references/product-integrity.md) when the surface includes dashboards, marketing claims, forms, navigation, asynchronous data, or multiple UI states.

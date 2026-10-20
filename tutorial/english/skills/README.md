@@ -21,6 +21,7 @@ This index covers every canonical skill available in `skills/`. Select the skill
 | `superior-testing` | Test strategy, regressions, test levels, fixtures, and flaky failures | [Open](superior-testing/README.md) |
 | `superior-ui` | Building or refining product interfaces | [Open](superior-ui/README.md) |
 | `superior-ui-audit` | Read-only visual audits with prioritized findings | [Open](superior-ui-audit/README.md) |
+| `superior-ux` | User journeys, information architecture, task flows, feedback, and recovery | [Open](superior-ux/README.md) |
 
 ## Invocation
 

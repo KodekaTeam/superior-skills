@@ -31,6 +31,7 @@ $superior-ui Redesign dashboard ini agar hierarki keputusan lebih jelas tanpa me
 ## Kombinasi yang sesuai
 
 - Tambahkan `superior-responsive` untuk adaptasi lintas ukuran.
+- Tambahkan `superior-ux` bila journey, arsitektur informasi, task flow, feedback, atau recovery menjadi concern utama.
 - Tambahkan `superior-accessibility` untuk pemeriksaan akses yang mendalam.
 - Tambahkan `superior-copy` bila teks produk ikut dirancang.
 - Tambahkan `superior-logic` bila API atau behavior aplikasi ikut berubah.

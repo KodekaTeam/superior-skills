@@ -21,6 +21,7 @@ Indeks ini mencakup seluruh skill kanonis di `skills/`. Pilih skill yang paling 
 | `superior-testing` | Strategi test, regresi, level test, fixture, dan flaky failure | [Buka](superior-testing/README.md) |
 | `superior-ui` | Membangun atau memperbaiki antarmuka produk | [Buka](superior-ui/README.md) |
 | `superior-ui-audit` | Audit visual read-only dengan temuan terprioritas | [Buka](superior-ui-audit/README.md) |
+| `superior-ux` | Journey pengguna, arsitektur informasi, task flow, feedback, dan recovery | [Buka](superior-ux/README.md) |
 
 ## Cara memanggil
 

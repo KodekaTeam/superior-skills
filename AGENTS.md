@@ -28,6 +28,7 @@ After verified material changes to code, configuration, schema, API behavior, se
 The portable plugin discovers its skills under the canonical root `skills/` directory. Load only the entries that materially affect the task:
 
 - Build, redesign, or visually refine an interface: `superior-ui`
+- Design or review user journeys, information architecture, task flows, feedback, and recovery: `superior-ux`
 - Audit an existing interface and prepare evidence-backed recommendations: `superior-ui-audit`
 - Repair responsive behavior or mobile layout: `superior-responsive`
 - Check accessibility, keyboard use, focus, contrast, or inclusive states: `superior-accessibility`
@@ -48,6 +49,7 @@ The portable plugin discovers its skills under the canonical root `skills/` dire
 Common combinations:
 
 - UI implementation: `superior-ui`, plus `superior-responsive` or `superior-accessibility` only when those concerns are substantial.
+- Experience design: `superior-ux`; add `superior-ui` for visual implementation and `superior-logic` when the underlying behavior changes.
 - UI audit: `superior-ui-audit`; add accessibility only when the user requests an accessibility review.
 - General code review: `superior-code-review`; add a specialized domain skill only when that concern requires substantial depth.
 - Full-stack feature: `superior-ui` for presentation and `superior-logic` for behavior. Do not make the UI skill govern domain logic.

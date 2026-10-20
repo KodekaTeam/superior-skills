@@ -1,7 +1,7 @@
 {
   "name": "superior-skills",
   "version": "2.1.0",
-  "description": "Evidence-based code review, engineering, delivery, reliability, performance, database, debugging, testing, interface, documentation, and API security workflows for coding agents.",
+  "description": "Evidence-based code review, engineering, delivery, reliability, performance, database, debugging, testing, UX, interface, documentation, and API security workflows for coding agents.",
   "author": {
     "name": "KodekaTeam"
   },
@@ -20,13 +20,14 @@
     "delivery",
     "reliability",
     "ui",
+    "ux",
     "accessibility"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Superior Skills",
     "shortDescription": "Contextual engineering skills",
-    "longDescription": "Review, measure, design data, diagnose, build, test, deliver, operate reliably, secure, and document software changes using project evidence and focused reusable skills.",
+    "longDescription": "Review, shape experiences, measure, design data, diagnose, build, test, deliver, operate reliably, secure, and document software changes using project evidence and focused reusable skills.",
     "developerName": "KodekaTeam",
     "category": "Productivity",
     "composerIcon": "./assets/logo-colored-transparent.png",

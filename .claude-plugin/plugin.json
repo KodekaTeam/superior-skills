@@ -1,7 +1,7 @@
 {
   "name": "superior-skills",
   "version": "2.1.0",
-  "description": "Evidence-based code review, engineering, delivery, reliability, performance, database, debugging, testing, interface, documentation, and API security workflows for coding agents.",
+  "description": "Evidence-based code review, engineering, delivery, reliability, performance, database, debugging, testing, UX, interface, documentation, and API security workflows for coding agents.",
   "author": {
     "name": "KodekaTeam"
   },

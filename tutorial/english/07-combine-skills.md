@@ -7,6 +7,7 @@ Combine skills according to the concerns actually present, not according to the 
 | Task | Primary skill | Add when relevant |
 | --- | --- | --- |
 | Build a new page | `superior-ui` | `superior-responsive`, `superior-accessibility`, `superior-copy` |
+| User journey, information architecture, or task flow | `superior-ux` | `superior-ui` for visual implementation; `superior-logic` for behavior; `superior-copy` for language |
 | Read-only visual audit | `superior-ui-audit` | `superior-accessibility` when requested |
 | Full-stack feature | `superior-logic` + `superior-ui` | `superior-docs` when durable knowledge changes |
 | General change-set review | `superior-code-review` | A specialized domain skill only when that concern requires substantial depth |

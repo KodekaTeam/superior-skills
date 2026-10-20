@@ -73,6 +73,8 @@ Test observable behavior rather than private steps. Cover the normal path and th
 
 Load `superior-testing` when test design, level selection, fixtures, doubles, flaky behavior, or suite reliability is a primary part of the request. Ordinary implementation verification remains part of this skill and does not require loading the dedicated testing workflow.
 
+Load `superior-ux` when domain behavior must be shaped around a multi-step user journey, information architecture, feedback, or recovery experience. Keep enforceable state transitions, invariants, APIs, and persistence in this skill.
+
 Use existing test conventions and run the narrowest relevant lint, type, test, and build checks. Report unverified conditions and compatibility risk explicitly.
 
 Report the final contract, affected producers and consumers, failure behavior, compatibility or rollout assumptions, and checks actually performed. Do not describe a workflow as atomic or exactly-once unless the implementation and underlying systems prove that guarantee.

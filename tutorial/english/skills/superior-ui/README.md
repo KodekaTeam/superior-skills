@@ -31,6 +31,7 @@ $superior-ui Redesign this dashboard to clarify its decision hierarchy without c
 ## Suitable combinations
 
 - Add `superior-responsive` for adaptation across sizes.
+- Add `superior-ux` when journeys, information architecture, task flows, feedback, or recovery are primary.
 - Add `superior-accessibility` for deeper accessibility checks.
 - Add `superior-copy` when product text is also being designed.
 - Add `superior-logic` when APIs or application behavior also change.
