@@ -29,6 +29,8 @@ Read [references/visual-system.md](references/visual-system.md) when the task cr
 
 Read [references/page-closure-and-footer.md](references/page-closure-and-footer.md) when building or substantially redesigning a landing page, homepage, multi-section marketing page, or footer. Treat the ending as a deliberate part of the page composition without assuming that every site needs a large multi-column footer.
 
+Read [references/semantic-html-and-search-discovery.md](references/semantic-html-and-search-discovery.md) when building or substantially changing a public page whose content must be discoverable, linked, or indexed, including landing pages, homepages, articles, documentation, catalogs, and public detail routes. Keep private dashboards and authenticated tools outside search-oriented requirements unless the product contract says otherwise.
+
 Read [references/expressive-composition-and-component-craft.md](references/expressive-composition-and-component-craft.md) when the direction calls for asymmetric composition, layered depth, editorial tension, or bespoke tactile component details. Use those patterns as candidates justified by content and task—not as mandatory decoration or randomized style selection.
 
 Read [references/motion-and-rendering-performance.md](references/motion-and-rendering-performance.md) when motion is a substantial part of the experience, including animated navigation, overlays, scroll entry, coordinated state transitions, or expressive microinteractions. Keep motion purposeful, accessible, and proportionate to runtime cost.

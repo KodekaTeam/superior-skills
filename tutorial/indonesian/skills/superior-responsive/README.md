@@ -10,7 +10,7 @@ Gunakan ketika layout pecah, konten terpotong, tabel tidak dapat digunakan, navi
 
 1. Reproduksi kegagalan pada viewport dan konten nyata.
 2. Temukan pemilik width, overflow, min-content, atau constraint yang menyebabkan masalah.
-3. Recompose berdasarkan prioritas konten; jangan sekadar mengecilkan semua elemen.
+3. Recompose berdasarkan prioritas konten sambil mempertahankan satu hierarki semantik dan source order yang authoritative; jangan sekadar mengecilkan semua elemen.
 4. Buat scroll lokal hanya pada area yang memang membutuhkannya.
 5. Ketika ruang runtime berubah, perhitungkan visual viewport, virtual keyboard, safe area, orientation, kemampuan input, dan embedded container.
 6. Uji viewport lebar, sekitar breakpoint, sempit, zoom, teks panjang, sentuhan, dan keyboard.

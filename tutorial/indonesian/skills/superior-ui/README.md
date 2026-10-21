@@ -18,6 +18,8 @@ Jika proyek belum memiliki arah visual yang mengikat, skill dapat menawarkan dua
 
 Untuk landing page dan homepage, skill juga memperlakukan footer sebagai penutup komposisi yang disengaja. Skill memilih mode minimal utility, sitemap, conversion, editorial, atau product-service dari route dan konten nyata, bukan menjadikan strip tipis generik sebagai default atau mengarang link untuk memenuhi kolom.
 
+Untuk halaman publik yang perlu ditemukan atau diindeks, skill mempertahankan hierarki HTML yang bermakna, source order yang stabil, navigasi yang dapat diikuti crawler, metadata milik route, dan strategi rendering proyek yang sudah ada. Persyaratan ini tidak otomatis berlaku pada dashboard privat atau tool yang memerlukan autentikasi.
+
 ## Contoh prompt
 
 ```text

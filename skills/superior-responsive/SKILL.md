@@ -27,6 +27,7 @@ Do not implement separate mobile and desktop experiences that drift in capabilit
 ## Recompose deliberately
 
 - Preserve task order when columns stack. Source order should remain meaningful.
+- Keep one authoritative semantic and content hierarchy across breakpoints. Do not duplicate hidden desktop and mobile copies of primary content merely to achieve a different composition.
 - Collapse, wrap, scroll a bounded data region, or change representation based on content needs.
 - Let grids use the fewest columns that keep each item useful. Do not retain a desktop grid merely for symmetry.
 - Scale type and spacing within readable limits; avoid shrinking controls and text until they technically fit.

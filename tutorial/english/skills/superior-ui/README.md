@@ -18,6 +18,8 @@ When the project has no governing visual direction, the skill can shortlist two 
 
 For landing pages and homepages, the skill also treats the footer as deliberate page closure. It selects a minimal utility, sitemap, conversion, editorial, or product-service mode from real routes and content instead of defaulting every design to a thin generic strip or inventing links to fill columns.
 
+For public pages that must be discovered or indexed, the skill preserves a meaningful HTML hierarchy, stable source order, crawlable navigation, route-owned metadata, and the project's established rendering strategy. These requirements do not apply automatically to private dashboards or authenticated tools.
+
 ## Prompt examples
 
 ```text

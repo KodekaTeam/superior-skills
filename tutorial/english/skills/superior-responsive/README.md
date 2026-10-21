@@ -10,7 +10,7 @@ Use it when layouts break, content is clipped, tables become unusable, navigatio
 
 1. Reproduce the failure with realistic viewports and content.
 2. Find the owner of the width, overflow, min-content, or constraint causing the problem.
-3. Recompose according to content priority instead of shrinking everything.
+3. Recompose according to content priority instead of shrinking everything, while preserving one authoritative semantic and source hierarchy.
 4. Introduce local scrolling only where it is intentional.
 5. When runtime space changes, account for the visual viewport, virtual keyboard, safe areas, orientation, input capability, and embedded container.
 6. Test wide, near-breakpoint, and narrow viewports, as well as zoom, long text, touch, and keyboard use.
