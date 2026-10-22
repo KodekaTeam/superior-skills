@@ -30,10 +30,21 @@ Not every control needs a dramatic choice. A restrained system becomes distincti
 ## Typography
 
 - Preserve the established type family unless the task authorizes a system change.
+- Inspect existing type tokens and representative computed styles before choosing sizes. Map new text to an existing role when one fits; do not create a parallel scale merely because a reference looks different.
+- When recreating from an image or screenshot, infer hierarchy, density, measure, and relative scale rather than copying apparent pixels. Account for image resizing, capture resolution, browser zoom, device pixel ratio, and unavailable source fonts.
 - Use a small, legible scale with clear role differences rather than many near-identical sizes.
 - Let measure, weight, line height, and spacing carry hierarchy; oversized headings are not a substitute for structure.
 - Avoid defaulting to a fashionable font merely to signal polish.
 - Test long labels, localization-like expansion, numerals, and dense data where relevant.
+
+When no established type scale exists, use these as starting points rather than universal requirements:
+
+- begin ordinary body and reading text around `1rem` (commonly `16px` at the default browser setting);
+- begin compact controls and supporting text around `0.875rem` (`14px`);
+- reserve `0.75rem` (`12px`) for short secondary metadata or captions with sufficient contrast, and do not put essential instructions, errors, actions, or decision-critical values below it;
+- avoid meaningful text below `0.75rem` unless an existing product system explicitly owns the exception and the rendered result remains readable under the supported zoom and display conditions.
+
+Adjust those baselines when the established product, platform convention, audience, content density, or tested hardware supports a different choice. Prefer text roles expressed through the project's relative-unit and token conventions. Do not use viewport width alone to size text, and do not solve layout pressure by shrinking copy until it merely fits.
 
 ## Color and effects
 

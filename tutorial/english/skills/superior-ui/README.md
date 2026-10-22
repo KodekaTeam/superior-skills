@@ -16,6 +16,8 @@ Use it to implement pages, components, dashboards, product flows, or redesigns t
 
 When the project has no governing visual direction, the skill can shortlist two or three suitable styles, explain their fit and risks, and select one primary direction before implementation. Color references are mapped to semantic body, component, typography, interaction, and state tokens; palette order alone does not determine usage.
 
+For design recreation, screenshots provide hierarchy and proportion rather than trustworthy CSS measurements. The skill checks existing typography tokens first; when none exist, it starts from readable body, control, and caption baselines and adjusts them against the rendered result instead of reproducing tiny apparent pixels.
+
 For landing pages and homepages, the skill also treats the footer as deliberate page closure. It selects a minimal utility, sitemap, conversion, editorial, or product-service mode from real routes and content instead of defaulting every design to a thin generic strip or inventing links to fill columns.
 
 For public pages that must be discovered or indexed, the skill preserves a meaningful HTML hierarchy, stable source order, crawlable navigation, route-owned metadata, and the project's established rendering strategy. These requirements do not apply automatically to private dashboards or authenticated tools.
