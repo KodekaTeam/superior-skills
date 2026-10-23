@@ -5,8 +5,11 @@ Use this file as a portable baseline. Instructions supplied by the user and rule
 ## Working contract
 
 - Read the relevant project documentation and trace the affected implementation before choosing a solution.
+- Inspect and reuse existing components, utilities, dependencies, conventions, and platform capabilities before introducing new abstractions or dependencies.
 - Preserve established architecture, naming, visual language, and product behavior unless the task explicitly changes them.
-- Make the smallest coherent change that resolves the requested outcome. Do not bundle speculative cleanup.
+- Make the smallest complete, coherent change that resolves the requested outcome. Do not bundle speculative cleanup or unrelated refactors.
+- Choose tests according to meaningful risk and observable behavior, not superficial test counts.
+- Simplicity must not remove required validation, error handling, security, accessibility, compatibility, recovery, or data integrity.
 - Treat claims, sample data, controls, routes, and success states as product behavior: they must be real, clearly marked as examples, or honestly unavailable.
 - Preserve each text file's established encoding and line endings. When no encoding is declared, read and write text explicitly as UTF-8; never reinterpret UTF-8 bytes as Windows-1252 or Latin-1. Do not turn punctuation, symbols, or box-drawing characters into mojibake such as `â€”`, `â€™`, or `â”`. If suspicious text already exists, determine whether it is source content or encoding damage before changing it, repair only confirmed damage, and re-read the affected text after writing.
 - Verify the changed behavior with the narrowest meaningful checks. State what was not verified.
