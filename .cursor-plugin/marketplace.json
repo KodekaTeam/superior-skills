@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "KodekaTeam skills for contextual software engineering workflows.",
-    "version": "2.2.0"
+    "version": "2.3.0"
   },
   "plugins": [
     {
       "name": "superior-skills",
       "source": ".",
       "description": "Evidence-based code review, engineering, delivery, reliability, performance, database, debugging, testing, UX, interface, documentation, and API security workflows.",
-      "version": "2.2.0",
+      "version": "2.3.0",
       "license": "MIT",
       "logo": "assets/logo-colored-transparent.png"
     }
