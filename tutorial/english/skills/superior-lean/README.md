@@ -1,6 +1,6 @@
 # Using `superior-lean`
 
-This skill seeks the smallest solution that remains complete, correct, safe, and contract-compliant. Its principles draw from the Ponytail approach, while routing and runtime instructions remain specific to Superior.
+This skill seeks the smallest solution that remains complete, correct, safe, and contract-compliant. Its routing and runtime instructions are owned entirely by Superior.
 
 ## When to use it
 
@@ -11,8 +11,11 @@ Use it when an implementation is accumulating abstractions, dependencies, wrappe
 1. State the contract that must be fulfilled and the risks that cannot be ignored.
 2. Look for existing capabilities in local code, the standard library, the native platform, or installed dependencies.
 3. Compare solutions by the number of new concepts, not merely lines of code.
-4. Remove single-use abstractions or speculative generalization when they provide no concrete value.
-5. Test important behavior and explain the remaining trade-offs.
+4. Distinguish accidental machinery from boundaries justified by current consumers, external systems, policy, compatibility, or real variation.
+5. Trace indirect consumers and compare total ownership before removing shared code or dependencies.
+6. Test important behavior and explain the remaining trade-offs.
+
+Code with no direct callers may still be activated through registries, configuration, routes, events, reflection, build tooling, or public APIs. Likewise, a dependency is simpler to remove only when the project can safely own its complete behavior and maintenance burden—not merely reproduce its happy path in fewer lines.
 
 ## Prompt examples
 
