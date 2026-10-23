@@ -1,0 +1,27 @@
+{
+  "name": "superior-skills",
+  "version": "2.3.0",
+  "description": "Evidence-based code review, engineering, delivery, reliability, performance, database, debugging, testing, UX, interface, documentation, and API security workflows for coding agents.",
+  "keywords": [
+    "agent-skills",
+    "software-engineering",
+    "code-review",
+    "ui",
+    "ux",
+    "testing",
+    "delivery",
+    "reliability",
+    "api-security"
+  ],
+  "author": "KodekaTeam",
+  "homepage": "https://github.com/KodekaTeam/superior-skills",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Superior Skills",
+    "shortDescription": "Contextual engineering skills",
+    "longDescription": "Review, design, build, test, secure, deliver, and document software changes using project evidence and focused reusable skills.",
+    "developerName": "KodekaTeam",
+    "websiteURL": "https://github.com/KodekaTeam/superior-skills"
+  }
+}

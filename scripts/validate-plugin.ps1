@@ -132,7 +132,9 @@ $manifests = @(
     'plugin.json',
     '.codex-plugin/plugin.json',
     '.claude-plugin/plugin.json',
-    '.cursor-plugin/plugin.json'
+    '.cursor-plugin/plugin.json',
+    'gemini-extension.json',
+    'kimi.plugin.json'
 )
 
 foreach ($relativePath in $manifests) {
@@ -171,6 +173,16 @@ try {
 }
 catch {
     Add-ValidationError "Unable to validate Codex interface metadata: $($_.Exception.Message)"
+}
+
+try {
+    $kimiManifest = Get-Content -Raw (Join-Path $root 'kimi.plugin.json') | ConvertFrom-Json
+    if ($kimiManifest.skills -ne './skills/') {
+        Add-ValidationError "kimi.plugin.json must expose canonical skills from './skills/'."
+    }
+}
+catch {
+    Add-ValidationError "Unable to validate Kimi plugin metadata: $($_.Exception.Message)"
 }
 
 $marketplaces = @(
@@ -300,4 +312,4 @@ if ($errors.Count -gt 0) {
     exit 1
 }
 
-Write-Output "Validated $($skillDirectories.Count) canonical skills, 4 plugin manifests, 3 marketplaces, $validatedTextFiles tracked text files, $validatedReferences documentation references, and version $version."
+Write-Output "Validated $($skillDirectories.Count) canonical skills, $($manifests.Count) plugin manifests, $($marketplaces.Count) marketplaces, $validatedTextFiles tracked text files, $validatedReferences documentation references, and version $version."

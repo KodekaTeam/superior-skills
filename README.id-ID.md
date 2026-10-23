@@ -21,7 +21,7 @@
 - Pembuatan UI dan audit UI dipisahkan agar permintaan implementasi tidak berubah menjadi audit read-only.
 - Panduan visual yang panjang menggunakan progressive disclosure melalui `references/`.
 - Nama dan description setiap skill dibuat spesifik agar implicit invocation lebih akurat.
-- Satu struktur kanonis `skills/` dipaketkan untuk Codex, Cursor, dan Claude Code.
+- Satu struktur kanonis `skills/` digunakan untuk instalasi plugin native maupun standalone pada coding agent yang didukung.
 - Baseline umum berada di `AGENTS.md`; detail spesialis hanya dimuat ketika relevan.
 - Pekerjaan implementasi material yang telah diverifikasi dicatat otomatis dalam `docs/implementation-timeline/` yang terindeks, kecuali pengguna menolaknya.
 
@@ -37,7 +37,9 @@ superior-skills/
 |-- AGENTS.md
 |-- CLAUDE.md
 |-- INSTALL.md
-|-- plugin.json
+|-- plugin.json                # Agent Plugin portable dan marker Antigravity
+|-- gemini-extension.json      # Extension Gemini CLI
+|-- kimi.plugin.json           # Plugin Kimi Code
 |-- skills/                    # Skill portable kanonis
 |-- scripts/                   # Validasi paket
 |-- .codex-plugin/             # Manifest kompatibilitas Codex
@@ -97,6 +99,38 @@ Jalankan perintah berikut di dalam Claude Code:
 /plugin install superior-skills@superior-skills
 ```
 
+### Gemini CLI
+
+Instal repository sebagai extension native Gemini, kemudian mulai sesi baru:
+
+```shell
+gemini extensions install https://github.com/KodekaTeam/superior-skills
+```
+
+### Google Antigravity
+
+Antigravity CLI dapat memasang repository sebagai paket skill:
+
+```shell
+agy plugin install https://github.com/KodekaTeam/superior-skills
+```
+
+Untuk Antigravity IDE, salin paket lengkap ke `.agents/plugins/superior-skills/` untuk scope workspace atau `~/.gemini/config/plugins/superior-skills/` untuk scope global.
+
+### Kimi Code
+
+Instal repository melalui plugin manager Kimi Code, kemudian jalankan `/reload` atau mulai sesi baru:
+
+```text
+/plugins install https://github.com/KodekaTeam/superior-skills
+```
+
+### Cline, Muse Code, dan Hermes Agent
+
+- **Cline:** gunakan Skills CLI dan pilih Cline, atau salin folder skill yang dipilih ke `.cline/skills/` atau `~/.cline/skills/`.
+- **Muse Code:** salin skill ke `.agents/skills/`, atau impor instalasi Codex yang sudah ada dengan `muse skills import --from codex`.
+- **Hermes Agent:** cari dan instal skill Superior secara individual melalui sumber `skills-sh` menggunakan `hermes skills search superior --source skills-sh`.
+
 ### Agent Skills standalone
 
 Untuk agent yang belum mendukung plugin, salin folder-folder di dalam `skills/` ke direktori skills tingkat proyek atau pengguna milik agent tersebut. Pada layout proyek yang kompatibel dengan Codex, direktori yang umum digunakan adalah `.agents/skills/`.
@@ -128,6 +162,22 @@ claude plugin marketplace update superior-skills
 claude plugin update superior-skills@superior-skills
 ```
 
+### Gemini CLI
+
+```shell
+gemini extensions update superior-skills
+```
+
+Mulai ulang Gemini CLI setelah extension diperbarui.
+
+### Google Antigravity
+
+Perbarui plugin melalui plugin manager Antigravity. Untuk paket IDE yang disalin manual, ganti direktori plugin `superior-skills` dengan isi repository terbaru.
+
+### Kimi Code
+
+Buka `/plugins`, pilih **Superior Skills**, lalu gunakan aksi update yang tersedia. Jalankan `/reload` setelahnya.
+
 ### Cursor
 
 Buka **Cursor Settings → Plugins**, cari **Superior Skills**, lalu gunakan aksi update atau reinstall yang tersedia. Setelah itu jalankan **Developer: Reload Window**.
@@ -146,7 +196,7 @@ Tidak. Superior saat ini merupakan plugin skills-only. Paket ini tidak memasang 
 
 ### Di mana skills diinstal?
 
-Host plugin biasanya memasang paket plugin ke cache lalu membaca direktori `skills/` di root paket tersebut. Host tidak harus membuat `.agents/skills/` pada setiap proyek target. Path `.agents/skills/` hanya digunakan sebagai fallback standalone.
+Host plugin biasanya memasang paket ke cache lalu membaca direktori `skills/` di root paket tersebut. Host standalone membaca skill yang disalin ke direktori proyek atau pengguna masing-masing, seperti `.agents/skills/`, `.cline/skills/`, atau `~/.hermes/skills/`.
 
 ### Mengapa skill yang baru diperbarui belum aktif?
 

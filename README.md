@@ -20,7 +20,7 @@
 - UI creation and UI auditing are separate, preventing implementation requests from turning into read-only audits.
 - Extensive visual guidance uses progressive disclosure through `references/`.
 - Each skill has a specific name and description to improve implicit invocation accuracy.
-- One canonical `skills/` tree is packaged for Codex, Cursor, and Claude Code.
+- One canonical `skills/` tree serves native plugin and standalone installations across supported coding agents.
 - Shared baseline rules live in `AGENTS.md`; specialist details are loaded only when relevant.
 - Verified material implementation work is recorded in an indexed `docs/implementation-timeline/` by default, unless the user opts out.
 
@@ -36,7 +36,9 @@ superior-skills/
 |-- AGENTS.md
 |-- CLAUDE.md
 |-- INSTALL.md
-|-- plugin.json
+|-- plugin.json                # Portable Agent Plugin and Antigravity marker
+|-- gemini-extension.json      # Gemini CLI extension
+|-- kimi.plugin.json           # Kimi Code plugin
 |-- skills/                    # Canonical portable skills
 |-- scripts/                   # Package validation
 |-- .codex-plugin/             # Codex compatibility manifest
@@ -96,6 +98,38 @@ Run these commands inside Claude Code:
 /plugin install superior-skills@superior-skills
 ```
 
+### Gemini CLI
+
+Install the repository as a native Gemini extension, then start a new session:
+
+```shell
+gemini extensions install https://github.com/KodekaTeam/superior-skills
+```
+
+### Google Antigravity
+
+Antigravity CLI can install the repository as a skill bundle:
+
+```shell
+agy plugin install https://github.com/KodekaTeam/superior-skills
+```
+
+For Antigravity IDE, copy the complete package into `.agents/plugins/superior-skills/` for workspace scope or `~/.gemini/config/plugins/superior-skills/` for global scope.
+
+### Kimi Code
+
+Install the repository from the Kimi Code plugin manager, then run `/reload` or start a new session:
+
+```text
+/plugins install https://github.com/KodekaTeam/superior-skills
+```
+
+### Cline, Muse Code, and Hermes Agent
+
+- **Cline:** use Skills CLI and select Cline, or copy the selected skill folders into `.cline/skills/` or `~/.cline/skills/`.
+- **Muse Code:** copy skills into `.agents/skills/`, or import an existing Codex installation with `muse skills import --from codex`.
+- **Hermes Agent:** find and install individual Superior skills through its `skills-sh` source with `hermes skills search superior --source skills-sh`.
+
 ### Standalone Agent Skills
 
 For agents without plugin support, copy the folders inside `skills/` into the agent's project-level or user-level skills directory. For Codex-compatible project layouts, that directory is commonly `.agents/skills/`.
@@ -127,6 +161,22 @@ claude plugin marketplace update superior-skills
 claude plugin update superior-skills@superior-skills
 ```
 
+### Gemini CLI
+
+```shell
+gemini extensions update superior-skills
+```
+
+Restart Gemini CLI after the extension update.
+
+### Google Antigravity
+
+Update the installed plugin through Antigravity's plugin manager. For manually copied IDE packages, replace the existing `superior-skills` plugin directory with the latest repository contents.
+
+### Kimi Code
+
+Open `/plugins`, select **Superior Skills**, and use the available update action. Run `/reload` afterward.
+
 ### Cursor
 
 Open **Cursor Settings → Plugins**, locate **Superior Skills**, and select the available update or reinstall action. Run **Developer: Reload Window** afterward.
@@ -145,7 +195,7 @@ No. Superior is currently a skills-only plugin. It does not install an MCP serve
 
 ### Where are the skills installed?
 
-Plugin hosts normally install a cached plugin package and read its root `skills/` directory. They do not need to create `.agents/skills/` inside every target project. The `.agents/skills/` path is only a standalone fallback.
+Plugin hosts normally install a cached plugin package and read its root `skills/` directory. Standalone hosts instead discover copied skills from their own project or user directories, such as `.agents/skills/`, `.cline/skills/`, or `~/.hermes/skills/`.
 
 ### Why is an updated skill not active yet?
 
