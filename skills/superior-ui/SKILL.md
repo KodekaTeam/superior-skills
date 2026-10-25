@@ -27,6 +27,8 @@ When no governing visual direction exists, shortlist two or three materially dif
 
 Read [references/visual-system.md](references/visual-system.md) when the task creates a new visual direction, changes several components, needs substantial visual polish, or recreates a design from an image or external reference. Also read [references/style-and-palette-direction.md](references/style-and-palette-direction.md) when selecting among named UI styles, establishing a new palette, or assigning colors to body, component, and typography roles. For focused edits, preserve the local system without loading either reference.
 
+Read [references/reference-source-hygiene.md](references/reference-source-hygiene.md) whenever a screenshot, template, repository, demo, or third-party design materially informs the implementation. Use the reference for source-identity cleanup and for deciding when copied or adapted material requires attribution or license preservation.
+
 Read [references/page-closure-and-footer.md](references/page-closure-and-footer.md) when building or substantially redesigning a landing page, homepage, multi-section marketing page, or footer. Treat the ending as a deliberate part of the page composition without assuming that every site needs a large multi-column footer.
 
 Read [references/semantic-html-and-search-discovery.md](references/semantic-html-and-search-discovery.md) when building or substantially changing a public page whose content must be discoverable, linked, or indexed, including landing pages, homepages, articles, documentation, catalogs, and public detail routes. Keep private dashboards and authenticated tools outside search-oriented requirements unless the product contract says otherwise.

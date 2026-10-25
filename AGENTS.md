@@ -11,6 +11,7 @@ Use this file as a portable baseline. Instructions supplied by the user and rule
 - Choose tests according to meaningful risk and observable behavior, not superficial test counts.
 - Simplicity must not remove required validation, error handling, security, accessibility, compatibility, recovery, or data integrity.
 - Treat claims, sample data, controls, routes, and success states as product behavior: they must be real, clearly marked as examples, or honestly unavailable.
+- Treat external references as evidence, not product identity: do not carry source brands, demo copy, placeholders, URLs, metadata, comments, or asset names into the result unless the user explicitly needs them. Preserve license notices and attribution only when copied or substantially adapted material requires them; consulting a reference alone is not a reason to add either, and required notices must not be removed.
 - Preserve each text file's established encoding and line endings. When no encoding is declared, read and write text explicitly as UTF-8; never reinterpret UTF-8 bytes as Windows-1252 or Latin-1. Do not turn punctuation, symbols, or box-drawing characters into mojibake such as `â€”`, `â€™`, or `â”`. If suspicious text already exists, determine whether it is source content or encoding damage before changing it, repair only confirmed damage, and re-read the affected text after writing.
 - Verify the changed behavior with the narrowest meaningful checks. State what was not verified.
 

@@ -30,6 +30,12 @@ Do not “improve” deliberate slang, fragments, punctuation habits, or cultura
 - Preserve uncertainty where evidence is incomplete; do not fill gaps with plausible detail.
 - Avoid guarantees unless the product contract actually guarantees the result.
 
+## Keep references out of the product identity
+
+Treat examples, templates, screenshots, and competitor copy as evidence of structure or tone, not as product content. Do not carry source names, slogans, fictional companies, people, URLs, or demo labels into the result unless the user explicitly requests them. Prefer verified project language; when it is unavailable, use neutral, visibly replaceable placeholders that describe their role.
+
+Do not add attribution merely because a source was consulted. When text or another protected work is copied or substantially adapted, preserve the attribution or license notice required by its terms and place it in the project's established legal or third-party notice location rather than presenting it as ordinary product copy.
+
 ## Remove interchangeable language
 
 Revise phrases that add mood but no information, including vague superlatives, inflated significance, anonymous authority, and generic optimism. Replace them with the concrete capability, constraint, or consequence.

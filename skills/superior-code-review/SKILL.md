@@ -35,6 +35,8 @@ Prioritize risks that can produce:
 - material performance or resource regressions;
 - tests that pass while the changed behavior remains unverified.
 
+When a change uses an external template, repository, demo, or design reference, check for source residue that could ship as product identity: names, demo copy, placeholder people or companies, URLs, metadata, comments, package identifiers, and asset labels. Also flag required notices removed from copied or substantially adapted material, but do not infer an attribution obligation from a reference link, visual similarity, or inspiration alone.
+
 Do not report formatting, naming, personal style, or speculative redesign as defects unless they create a concrete maintenance or correctness risk not already enforced by tooling.
 
 ## Prove each finding
