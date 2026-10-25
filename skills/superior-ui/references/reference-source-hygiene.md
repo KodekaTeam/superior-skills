@@ -39,6 +39,6 @@ Attribution is not filler for the visible interface. Add it to product-facing UI
 
 ## Perform a residue pass
 
-Before delivery, search changed and generated files for the source name, distinctive demo terms, domains, and known placeholders. Inspect visible copy and the less obvious surfaces: metadata, manifests, comments, fixtures, seed data, accessibility text, filenames, and bundled assets.
+Before delivery, search changed and generated files for the source name, distinctive demo terms, domains, and known placeholders. Inspect visible copy and the less obvious surfaces: metadata, manifests, comments, fixtures, seed data, accessibility text, filenames, and bundled assets. Remove authoring notes that promise source-derived or replacement content will be supplied later; route missing-content decisions through the interface's product-integrity rules.
 
 Report any material retained from the source and where its required notice lives. If the result uses only high-level inspiration and no source material, do not invent attribution to make the provenance look formal.

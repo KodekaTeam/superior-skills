@@ -37,6 +37,8 @@ Prioritize risks that can produce:
 
 When a change uses an external template, repository, demo, or design reference, check for source residue that could ship as product identity: names, demo copy, placeholder people or companies, URLs, metadata, comments, package identifiers, and asset labels. Also flag required notices removed from copied or substantially adapted material, but do not infer an attribution obligation from a reference link, visual similarity, or inspiration alone.
 
+Also flag authoring residue presented as finished product copy: promises that content will be added or replaced later, unsupported "coming soon" labels, and empty sections preserved only by explanatory filler. Prefer a truthful present purpose, a real user action, an informative unavailable state, or removal; do not recommend invented partners, customers, metrics, or capabilities as replacement content.
+
 Do not report formatting, naming, personal style, or speculative redesign as defects unless they create a concrete maintenance or correctness risk not already enforced by tooling.
 
 ## Prove each finding

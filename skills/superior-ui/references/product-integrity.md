@@ -10,6 +10,17 @@ Use this reference when UI quality depends on claims, data, navigation, controls
 - Preserve unknowns. A truthful empty value is better than plausible fiction.
 - Make headings and labels identify the actual task, object, or outcome. Replace broad claims with concrete capability only when the repository supports it.
 
+Do not expose the production process as user-facing content. Copy such as "logos will be shown here," "content will be replaced later," or an unsupported "coming soon" describes an author's plan rather than the section's value.
+
+When a section lacks specific content:
+
+1. use verified project content when it exists;
+2. otherwise describe a category-level purpose that is true now or provide a real user action;
+3. use an explicit unavailable state only when the status changes what the user should do; and
+4. remove or withhold the section when it has no current informational or functional value.
+
+Do not preserve a layout merely by filling it with roadmap notes, speculative claims, or decorative placeholders.
+
 ## Navigation and controls
 
 - Every link needs a valid destination or an honest unavailable state.

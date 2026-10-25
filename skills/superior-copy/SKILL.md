@@ -30,6 +30,19 @@ Do not “improve” deliberate slang, fragments, punctuation habits, or cultura
 - Preserve uncertainty where evidence is incomplete; do not fill gaps with plausible detail.
 - Avoid guarantees unless the product contract actually guarantees the result.
 
+## Keep authoring notes out of product copy
+
+Product-facing copy must describe the section's present purpose, available value, or useful next action, not the author's plan to complete it later. Do not ship filler such as "content will be added here," "replace this later," or a generic "coming soon" unless an announced future state is itself verified and useful to the audience.
+
+When specific facts are unavailable, choose the smallest honest result:
+
+- describe the category-level purpose in language that remains true;
+- offer a real action, such as contacting the team or starting the relevant task;
+- show an unavailable state only when knowing that state helps the user; or
+- omit the section when it has no present value.
+
+Do not turn the missing fact into a broader unsupported claim. A section without confirmed partners, customers, metrics, or features must not imply that they already exist.
+
 ## Keep references out of the product identity
 
 Treat examples, templates, screenshots, and competitor copy as evidence of structure or tone, not as product content. Do not carry source names, slogans, fictional companies, people, URLs, or demo labels into the result unless the user explicitly requests them. Prefer verified project language; when it is unavailable, use neutral, visibly replaceable placeholders that describe their role.
