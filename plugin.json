@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "superior-skills",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Evidence-based code review, engineering, delivery, reliability, performance, database, debugging, testing, UX, interface, documentation, and API security workflows for coding agents.",
   "author": {
     "name": "KodekaTeam"
