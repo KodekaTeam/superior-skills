@@ -9,8 +9,9 @@ After a feature, fix, behavior change, security control, schema change, runtime 
 1. Create or update one record in `docs/implementation-timeline/<feature-domain>/` using a specific name such as `2026-10-15-fix-login-validation.md`.
 2. Create `docs/README.md`, the timeline index, and the feature-domain index when no documentation system exists.
 3. Record the outcome, implementation mechanism, decisions, verification actually run, limitations, and related docs.
-4. Skip prompts, chat transcripts, secrets, and file-by-file narration.
-5. Do not create documentation when the user explicitly asks to skip it.
+4. Curate final accepted intent, criteria, scope boundaries, and maintenance notes when they will help future work; update a living implementation guide only when the current contract or safe modification path changed.
+5. Skip raw prompts, chat transcripts, hidden reasoning, secrets, and file-by-file narration.
+6. Do not create documentation when the user explicitly asks to skip it.
 
 ## Update docs when these change
 

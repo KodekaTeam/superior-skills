@@ -1,11 +1,12 @@
 # Using `superior-docs`
 
-This skill maintains project memory across sessions. Its five primary modes are Bootstrap, Record, Synchronize, Reconstruct, and Handoff.
+This skill maintains curated project memory across sessions. Its six primary modes are Bootstrap, Record, Memory, Synchronize, Reconstruct, and Handoff.
 
 ## Choose the right mode
 
 - **Bootstrap**: establish a documentation foundation for a project that does not have one.
 - **Record**: automatically capture a verified material implementation outcome unless the user opts out.
+- **Memory**: curate accepted intent, criteria, decisions, and maintenance knowledge without preserving raw prompts or chat history.
 - **Synchronize**: align documentation after implementation changes.
 - **Reconstruct**: recover context from code and distributed evidence.
 - **Handoff**: record work status, decisions, risks, and next steps.
@@ -17,9 +18,10 @@ Keep current facts, accepted decisions, history, plans, and unknowns separate. D
 1. State the mode and project scope.
 2. Read relevant code, configuration, tests, documentation, repository status, and the task's final diff as evidence.
 3. For implementation work, create or update the outcome record in `docs/implementation-timeline/<feature-domain>/` with a specific dated filename and maintain the root and domain indexes.
-4. Update the core documents in `docs/structure-of-app/` only when their current-state claims changed.
-5. Create other specialized directories only when supported by evidence and a real need.
-6. Validate links, terminology, implementation status, task attribution, and potential secret exposure.
+4. Curate accepted intent, criteria, scope, and maintenance notes when they add durable context. Update an implementation guide only when its living contract or safe modification path changed.
+5. Update the core documents in `docs/structure-of-app/` only when their current-state claims changed.
+6. Create other specialized directories only when supported by evidence and a real need.
+7. Validate links, terminology, implementation status, task attribution, and potential secret exposure.
 
 ## Prompt examples
 
@@ -29,6 +31,10 @@ $superior-docs Bootstrap documentation for this project from the existing code. 
 
 ```text
 $superior-docs Synchronize documentation after the authentication-flow changes on this branch.
+```
+
+```text
+$superior-docs Curate the accepted requirements and verified implementation of this feature into durable project memory. Do not store the raw conversation.
 ```
 
 ## Suitable combinations

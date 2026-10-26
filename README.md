@@ -22,7 +22,7 @@
 - Each skill has a specific name and description to improve implicit invocation accuracy.
 - One canonical `skills/` tree serves native plugin and standalone installations across supported coding agents.
 - Shared baseline rules live in `AGENTS.md`; specialist details are loaded only when relevant.
-- Verified material implementation work is recorded in an indexed `docs/implementation-timeline/` by default, unless the user opts out.
+- Verified material implementation work is recorded in an indexed `docs/implementation-timeline/` by default, with accepted intent and maintenance knowledge curated into existing guides or decisions when useful, unless the user opts out.
 
 ## Structure
 
@@ -203,7 +203,7 @@ Refresh or update the marketplace and start a new conversation or agent session.
 
 ### Does Superior write implementation documentation automatically?
 
-For material, verified implementation work, `superior-docs` records a focused entry under `docs/implementation-timeline/<feature>/` when appropriate. An explicit request not to create documentation always takes precedence.
+For material, verified implementation work, `superior-docs` records a focused entry under `docs/implementation-timeline/<feature>/` when appropriate. It may also update a living implementation guide or decision when the current feature contract, criteria, invariants, or safe maintenance path changed. It never stores raw prompts, chat transcripts, or hidden reasoning. An explicit request not to create documentation always takes precedence.
 
 ### Can I install only one skill?
 

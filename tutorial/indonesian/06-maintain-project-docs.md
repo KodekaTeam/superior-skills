@@ -9,8 +9,9 @@ Setelah fitur, perbaikan, perubahan behavior, kontrol keamanan, perubahan schema
 1. Buat atau perbarui satu catatan di `docs/implementation-timeline/<feature-domain>/` dengan nama spesifik seperti `2026-10-15-perbaiki-validasi-login.md`.
 2. Buat `docs/README.md`, indeks timeline, dan indeks feature-domain ketika sistem dokumentasi belum ada.
 3. Catat outcome, mekanisme implementasi, keputusan, verifikasi yang benar-benar dijalankan, keterbatasan, dan docs terkait.
-4. Jangan masukkan prompt, transkrip chat, secret, atau narasi setiap file.
-5. Jangan membuat dokumentasi ketika pengguna secara eksplisit meminta untuk melewatinya.
+4. Kurasi intent akhir, criteria, batas scope, dan maintenance notes yang telah diterima ketika berguna untuk pekerjaan berikutnya; perbarui living implementation guide hanya ketika contract saat ini atau jalur perubahan amannya berubah.
+5. Jangan masukkan prompt mentah, transkrip chat, hidden reasoning, secret, atau narasi setiap file.
+6. Jangan membuat dokumentasi ketika pengguna secara eksplisit meminta untuk melewatinya.
 
 ## Update docs ketika berubah
 

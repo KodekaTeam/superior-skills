@@ -12,7 +12,7 @@ This index covers every canonical skill available in `skills/`. Select the skill
 | `superior-database` | Schemas, queries, indexes, transactions, migrations, and backfills | [Open](superior-database/README.md) |
 | `superior-debugging` | Evidence-driven diagnosis of reproducible, intermittent, and runtime failures | [Open](superior-debugging/README.md) |
 | `superior-delivery` | CI/CD, artifacts, releases, environment promotion, rollout, and rollback | [Open](superior-delivery/README.md) |
-| `superior-docs` | Documentation bootstrapping, synchronization, reconstruction, and handoff | [Open](superior-docs/README.md) |
+| `superior-docs` | Documentation recording, curated implementation memory, synchronization, reconstruction, and handoff | [Open](superior-docs/README.md) |
 | `superior-lean` | The smallest solution that remains complete and correct | [Open](superior-lean/README.md) |
 | `superior-logic` | APIs, state, data, validation, and business rules | [Open](superior-logic/README.md) |
 | `superior-performance` | Measurement, profiling, latency, throughput, resources, loading, and capacity | [Open](superior-performance/README.md) |

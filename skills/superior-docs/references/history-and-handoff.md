@@ -37,6 +37,8 @@ A timeline should help answer:
 
 After material AI-agent implementation work, the timeline also acts as the default change record. Use the verified outcome as the unit: one task may produce one coherent record, several genuinely independent outcomes, or no record when nothing material changed. Do not use prompts, chat turns, or file counts as the primary unit.
 
+Curate final accepted intent, criteria, scope boundaries, and maintenance consequences when they explain the outcome. Do not preserve the conversation sequence or superseded instructions. Read [curated-implementation-memory.md](curated-implementation-memory.md) when the result should guide future implementation or maintenance.
+
 ## Handoff snapshot
 
 At the end of substantial work, capture:

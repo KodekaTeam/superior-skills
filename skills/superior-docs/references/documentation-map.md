@@ -42,7 +42,7 @@ When this collection is created automatically, include a root `README.md`, the c
 
 ### `implementation-guides/`
 
-Use for living subsystem workflows that a maintainer must repeat or safely modify, such as authentication, global state, navigation, storage, reverse proxy, backups, or deep links. It explains how to operate or extend something; it is not the chronological record of each implementation task. Create topic files from real project boundaries rather than a universal checklist.
+Use for living feature and subsystem memory that a maintainer or AI agent must understand, repeat, or safely modify, such as authentication, global state, navigation, storage, reverse proxy, backups, or deep links. A guide may capture the current contract, flow, invariants, accepted criteria, extension points, verification path, and known limitations. It explains how the feature works now; it is not the chronological record of each implementation task or a prompt archive. Create topic files from real project boundaries rather than a universal checklist, and link relevant timeline records instead of copying their history.
 
 ### `build-and-distribution/`
 

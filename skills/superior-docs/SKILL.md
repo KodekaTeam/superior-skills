@@ -1,6 +1,6 @@
 ---
 name: superior-docs
-description: Create, reconstruct, synchronize, or automatically record durable repository documentation from current code, configuration, tests, existing docs, and Git history. Use for project context, architecture, decisions, implementation change records, timelines, build and distribution guides, maintenance handoffs, or cross-session continuity. After verified material implementation work, record the outcome by default unless the user explicitly opts out. Do not use for incidental comments or non-material edits.
+description: Create, reconstruct, synchronize, or automatically record durable repository documentation and curated implementation memory from current code, configuration, tests, accepted user intent, existing docs, and Git history. Use for project context, architecture, decisions, implementation change records, timelines, build and distribution guides, maintenance handoffs, or cross-session continuity. After verified material implementation work, record the outcome by default unless the user explicitly opts out. Do not use for incidental comments, raw prompt archiving, or non-material edits.
 ---
 
 # Superior Docs
@@ -11,6 +11,7 @@ Build documentation that lets a future maintainer recover the project's current 
 
 - **Bootstrap:** establish a useful `docs/` system where none exists.
 - **Record:** capture a verified implementation, fix, refactor, configuration change, or feature outcome in the implementation timeline.
+- **Memory:** curate accepted intent, criteria, decisions, and maintenance knowledge into the existing timeline, implementation guide, or decisions ledger.
 - **Synchronize:** update affected documents after verified project changes.
 - **Reconstruct:** derive architectural evolution, releases, or maintenance history from repository evidence.
 - **Handoff:** capture the current implementation, boundaries, risks, and next work at the end of a substantial effort.
@@ -22,6 +23,8 @@ Do not ask the user to choose when the request already determines the mode.
 After verified material changes to code, configuration, schema, API behavior, security controls, build behavior, or user-visible functionality, create or update an implementation record unless the user explicitly asks not to create or update documentation.
 
 Read [references/automatic-change-recording.md](references/automatic-change-recording.md) whenever another implementation skill completes material work. It defines the default path, minimum bootstrap, entry schema, opt-out behavior, and exclusions.
+
+Read [references/curated-implementation-memory.md](references/curated-implementation-memory.md) when user requirements, acceptance criteria, implementation decisions, or maintenance constraints should remain useful across sessions. Curate the accepted outcome and verified execution; never store raw prompts, chat transcripts, or hidden reasoning as project memory.
 
 Do not wait for a separate documentation request and do not ask for routine permission. Treat an explicit opt-out such as “skip docs,” “do not document this,” or an equivalent project instruction as authoritative. An opt-out for one task is not a permanent preference unless the user says so.
 

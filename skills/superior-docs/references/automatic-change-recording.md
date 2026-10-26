@@ -131,6 +131,18 @@ Start with compact metadata:
 
 Then include only sections supported by evidence:
 
+## Curated intent
+
+Summarize the final accepted user or product outcome. Preserve meaningful domain terms, constraints, and corrections without copying the prompt or conversation.
+
+## Acceptance criteria
+
+Record criteria that were explicitly accepted or verified by implementation and tests. Omit this section when the criteria cannot be recovered reliably.
+
+## Scope and non-goals
+
+Capture boundaries that prevent future work from accidentally expanding or reversing the implementation. Include only boundaries established by the user, code, tests, or accepted decisions.
+
 ## Outcome
 
 State what is now observably different. Summarize the user's objective without copying the chat transcript.
@@ -151,11 +163,17 @@ List checks actually run and their observed results. Separate unexecuted recomme
 
 Capture unresolved risk, compatibility concerns, deferred work, rollout needs, or `None known` when that statement is supported.
 
+## Maintenance notes
+
+Record non-obvious invariants, affected consumers, safe extension points, and checks a future maintainer should repeat. Keep this concise and move durable current-state guidance into an implementation guide when it would otherwise be rediscovered repeatedly.
+
 ## Related documentation
 
 Link affected architecture, decision, guide, build, release, audit, or API documents when they exist.
 
-Do not include prompts, hidden reasoning, access tokens, secret values, private infrastructure details, raw logs, unnecessary personal data, or claims that a commit or release exists when it does not.
+These sections are conditional, not a mandatory template. Read [curated-implementation-memory.md](curated-implementation-memory.md) when the task contains durable intent, criteria, or maintenance knowledge worth preserving.
+
+Do not include raw prompts, chat transcripts, hidden reasoning, access tokens, secret values, private infrastructure details, raw logs, unnecessary personal data, discarded instructions, or claims that a commit or release exists when it does not.
 
 ## Maintain the indexes
 
@@ -171,7 +189,7 @@ Do not rewrite older records merely to apply a new template. Correct them only w
 
 The timeline record is the default historical artifact. Add or update other collections only when the change affects their purpose:
 
-- `implementation-guides/`: repeatable subsystem workflow, safe modification procedure, or operational technique;
+- `implementation-guides/`: living feature or subsystem memory, repeatable workflow, safe modification procedure, invariants, or operational technique;
 - `build-and-distribution/`: verified build, packaging, migration, signing, deployment, rollback, or distribution procedure;
 - `structure-of-app/`: current product context, architecture, ownership, trust boundary, or accepted decision;
 - `history/releases/`: curated release or architectural evolution spanning multiple implementation records;
@@ -179,6 +197,8 @@ The timeline record is the default historical artifact. Add or update other coll
 - `roadmap/`: accepted future work, never presented as shipped behavior.
 
 Link related documents instead of duplicating their full content in the timeline entry.
+
+The timeline remains the historical record. When a change alters how a maintained feature works now, update or create one stable implementation guide only if the current contract, flow, invariants, or safe modification procedure would help future work. Do not create a guide merely because a timeline record exists.
 
 Do not expand synchronization merely because implementation touched a documented subsystem. Update a current-state document only when a specific statement, boundary, command, or procedure in it became false or incomplete.
 

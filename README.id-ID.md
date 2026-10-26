@@ -23,7 +23,7 @@
 - Nama dan description setiap skill dibuat spesifik agar implicit invocation lebih akurat.
 - Satu struktur kanonis `skills/` digunakan untuk instalasi plugin native maupun standalone pada coding agent yang didukung.
 - Baseline umum berada di `AGENTS.md`; detail spesialis hanya dimuat ketika relevan.
-- Pekerjaan implementasi material yang telah diverifikasi dicatat otomatis dalam `docs/implementation-timeline/` yang terindeks, kecuali pengguna menolaknya.
+- Pekerjaan implementasi material yang telah diverifikasi dicatat otomatis dalam `docs/implementation-timeline/` yang terindeks, dengan intent yang diterima dan pengetahuan maintenance dikurasi ke guide atau decision yang sudah ada ketika berguna, kecuali pengguna menolaknya.
 
 ## Struktur
 
@@ -204,7 +204,7 @@ Refresh atau update marketplace, kemudian mulai percakapan atau sesi agent baru.
 
 ### Apakah Superior otomatis menulis dokumentasi implementasi?
 
-Untuk pekerjaan implementasi material yang telah diverifikasi, `superior-docs` mencatat entri terfokus di `docs/implementation-timeline/<fitur>/` ketika sesuai. Permintaan eksplisit untuk tidak membuat dokumentasi selalu diprioritaskan.
+Untuk pekerjaan implementasi material yang telah diverifikasi, `superior-docs` mencatat entri terfokus di `docs/implementation-timeline/<fitur>/` ketika sesuai. Skill ini juga dapat memperbarui implementation guide atau decision ketika contract fitur, criteria, invariant, atau jalur maintenance yang aman berubah. Prompt mentah, transkrip chat, dan hidden reasoning tidak disimpan. Permintaan eksplisit untuk tidak membuat dokumentasi selalu diprioritaskan.
 
 ### Bisakah hanya satu skill yang diinstal?
 
