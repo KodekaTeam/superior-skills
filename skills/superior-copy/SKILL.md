@@ -41,11 +41,15 @@ When specific facts are unavailable, choose the smallest honest result:
 - show an unavailable state only when knowing that state helps the user; or
 - omit the section when it has no present value.
 
+For an explicitly requested design recreation, preserve the requested section and visual hierarchy where possible using truthful product content or clearly identified sample content. Match the reference's approximate text footprint and line count without inventing claims; disclose any necessary omission or material change.
+
 Do not turn the missing fact into a broader unsupported claim. A section without confirmed partners, customers, metrics, or features must not imply that they already exist.
 
 ## Keep references out of the product identity
 
 Treat examples, templates, screenshots, and competitor copy as evidence of structure or tone, not as product content. Do not carry source names, slogans, fictional companies, people, URLs, or demo labels into the result unless the user explicitly requests them. Prefer verified project language; when it is unavailable, use neutral, visibly replaceable placeholders that describe their role.
+
+When a user asks to recreate a reference, separating source identity from product copy does not authorize redesigning its visible layout. Choose replacement copy that fits the reference's content hierarchy and approximate text length while remaining honest and readable.
 
 Do not add attribution merely because a source was consulted. When text or another protected work is copied or substantially adapted, preserve the attribution or license notice required by its terms and place it in the project's established legal or third-party notice location rather than presenting it as ordinary product copy.
 

@@ -7,6 +7,7 @@ Use this guide when a screenshot, template, repository, demo, competitor product
 | Use of the source | Required handling |
 | --- | --- |
 | Inspiration only | Recreate the relevant hierarchy, interaction, or visual principle in the project's own system. Do not add the source name, attribution, or license merely because it was consulted. |
+| Explicit visual recreation | Match the requested visible layout and style while treating source identity, text, and assets separately. Apply [design-recreation.md](design-recreation.md); do not treat fidelity itself as permission to copy protected materials. |
 | Small copied excerpt or asset | Verify that its license permits the intended use. Keep only what is necessary and preserve any notice required for that material. |
 | Substantial code, content, or asset adaptation | Review the source terms before shipping, retain required copyright and license notices, and identify the derived material in the project's established third-party notice location. |
 | Unknown, incompatible, or unverifiable terms | Do not copy the material. Reimplement from product requirements and observable behavior, or ask the user for a permitted source. |
@@ -20,6 +21,8 @@ Prefer, in order:
 1. existing product copy, tokens, components, assets, and domain language;
 2. user-supplied facts and approved brand material;
 3. neutral placeholders that state their role and are visibly non-production.
+
+For an explicit visual recreation, retain the reference's layout and visual hierarchy while replacing source-specific content as needed. Use authorized product content or clearly identified sample content with similar visual footprint; preserve required notices and do not invent factual claims.
 
 Do not carry over source-specific:
 

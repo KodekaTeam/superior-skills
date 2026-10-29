@@ -19,6 +19,8 @@ When a section lacks specific content:
 3. use an explicit unavailable state only when the status changes what the user should do; and
 4. remove or withhold the section when it has no current informational or functional value.
 
+For an explicitly requested recreation, preserve the requested section's structure when truthful product content or clearly identified sample content can fill it. If a section cannot be represented honestly or safely, disclose the necessary omission or change rather than silently redesigning the page.
+
 Do not preserve a layout merely by filling it with roadmap notes, speculative claims, or decorative placeholders.
 
 ## Navigation and controls

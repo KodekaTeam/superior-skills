@@ -12,7 +12,7 @@ Prefer inputs in this order:
 4. content structure and user task;
 5. a disclosed, reversible design assumption.
 
-Do not treat a draft, abandoned experiment, screenshot from another product, or unused token as governing evidence without proving the connection.
+An explicit user request to match a supplied screenshot or external design establishes it as governing visual evidence for the requested scope. Follow its observable composition alongside explicit constraints; treat unrelated screenshots, drafts, abandoned experiments, and unused tokens as non-governing without a demonstrated connection.
 
 ## Direction controls
 
@@ -29,8 +29,8 @@ Not every control needs a dramatic choice. A restrained system becomes distincti
 
 ## Typography
 
-- Preserve the established type family unless the task authorizes a system change.
-- Inspect existing type tokens and representative computed styles before choosing sizes. Map new text to an existing role when one fits; do not create a parallel scale merely because a reference looks different.
+- Preserve the established type family unless the task authorizes a system change, including an explicit request to match a different visual reference.
+- Inspect existing type tokens and representative computed styles before choosing sizes. Map new text to an existing role when one fits; for an explicit recreation, adapt the authorized scope when existing tokens cannot reproduce the reference and report material constraints.
 - When recreating from an image or screenshot, infer hierarchy, density, measure, and relative scale rather than copying apparent pixels. Account for image resizing, capture resolution, browser zoom, device pixel ratio, and unavailable source fonts.
 - Use a small, legible scale with clear role differences rather than many near-identical sizes.
 - Let measure, weight, line height, and spacing carry hierarchy; oversized headings are not a substitute for structure.
@@ -66,7 +66,7 @@ For style-selection criteria, palette starting points, semantic token mapping, a
 - Vary section density only when the content changes pace or purpose.
 - Use alignment and whitespace to connect related information before placing every item in a card.
 - Avoid “card soup”: reserve containers for ownership, interaction, comparison, or meaningful grouping.
-- Do not force feature counts, pricing emphasis, logo bars, step counts, or footer columns to match a template.
+- When designing freely, do not force feature counts, pricing emphasis, logo bars, step counts, or footer columns to match a template. For an explicit recreation, preserve the reference's visible structure within the requested scope unless a constraint requires a disclosed change.
 - Treat the page ending as part of the composition. A footer may be restrained, but it should not collapse into a generic strip merely because its design was deferred.
 - On dashboards, lead with decisions and exceptions. A grid of generic metrics is not an information architecture.
 

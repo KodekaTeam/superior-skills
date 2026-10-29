@@ -23,7 +23,9 @@ Inspect the rendered surface when practical. If direction is missing, make the s
 
 State the direction in one useful sentence, such as “dense operational console with quiet chrome and high-signal status color.” The sentence must constrain actual decisions about hierarchy, density, type, color, shape, or motion. Avoid mood labels that could describe any product.
 
-When no governing visual direction exists, shortlist two or three materially different candidates that fit the product and explain each candidate's task fit, defining traits, and principal risk. Select one primary direction before implementation unless the user explicitly requests parallel concepts. A supporting influence may shape a limited detail, but do not blend several named styles into an incoherent trend collage.
+When the user asks to recreate, match, or closely follow a supplied design, that reference is the visual direction for the requested scope. Do not shortlist alternatives or redesign its visible composition unless the user asks. Read [references/design-recreation.md](references/design-recreation.md) for fidelity, adaptations, and visual verification.
+
+When no governing visual direction exists, shortlist two or three materially different candidates that fit the product and explain each candidate's task fit, defining traits, and principal risk. Select one primary direction before implementation unless the user explicitly requests parallel concepts. A supporting influence may shape a limited detail, but do not blend several named styles into an incoherent trend collage. When a reference's role is ambiguous, preserve its observable characteristics and disclose material assumptions rather than silently redesigning it.
 
 Read [references/visual-system.md](references/visual-system.md) when the task creates a new visual direction, changes several components, needs substantial visual polish, or recreates a design from an image or external reference. Also read [references/style-and-palette-direction.md](references/style-and-palette-direction.md) when selecting among named UI styles, establishing a new palette, or assigning colors to body, component, and typography roles. For focused edits, preserve the local system without loading either reference.
 
@@ -40,7 +42,7 @@ Read [references/motion-and-rendering-performance.md](references/motion-and-rend
 ## Build around the task
 
 - Start with semantic structure and information order; decoration follows.
-- Give each region a job. Remove sections that exist only to complete a familiar template.
+- Give each region a job. Remove sections that exist only to complete a familiar template when designing freely; for an explicit recreation, preserve the requested reference structure and handle unavailable content honestly.
 - Reuse existing primitives when they express the needed hierarchy. Add a variant only when the existing contract cannot.
 - Use spacing, type, contrast, alignment, and grouping to create hierarchy before adding containers or effects.
 - Let repeated components reflect repeated content. Do not force unlike information into identical cards.
@@ -68,10 +70,10 @@ Review the result from three distances:
 2. **Component:** Does each component earn its boundary, emphasis, and interaction?
 3. **Detail:** Are labels, icons, states, focus, alignment, and content honest and coherent?
 
-Challenge anything that looks borrowed from a generic template. Keep it when evidence or function supports it; revise it when it is merely decorative habit.
+Challenge generic template habits when creating a new direction. In an explicit recreation, the supplied design is evidence for the requested visual choices; do not discard them merely because they resemble a template.
 
 ## Verify
 
-Exercise changed interactions and relevant states. Check representative narrow and wide viewports, content extremes, keyboard flow, and the project's normal lint/type/build checks in proportion to the change. Report concrete results and any unverified risk.
+Exercise changed interactions and relevant states. Check representative narrow and wide viewports, content extremes, keyboard flow, and the project's normal lint/type/build checks in proportion to the change. For recreation, compare rendered output against the reference at a comparable viewport when practical, iterate on material differences, and report unverified fidelity or necessary deviations. Report concrete results and any unverified risk.
 
 Load `superior-performance` when loading, rendering, responsiveness, bundle cost, or client memory is a primary measured concern. Keep ordinary motion and rendering discipline in this skill when no dedicated performance investigation is needed.
