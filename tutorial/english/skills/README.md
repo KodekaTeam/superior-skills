@@ -14,6 +14,7 @@ This index covers every canonical skill available in `skills/`. Select the skill
 | `superior-delivery` | CI/CD, artifacts, releases, environment promotion, rollout, and rollback | [Open](superior-delivery/README.md) |
 | `superior-docs` | Documentation recording, curated implementation memory, synchronization, reconstruction, and handoff | [Open](superior-docs/README.md) |
 | `superior-lean` | The smallest solution that remains complete and correct | [Open](superior-lean/README.md) |
+| `superior-architecture` | Project structure, module ownership, and dependency boundaries | [Open](superior-architecture/README.md) |
 | `superior-logic` | APIs, state, data, validation, and business rules | [Open](superior-logic/README.md) |
 | `superior-performance` | Measurement, profiling, latency, throughput, resources, loading, and capacity | [Open](superior-performance/README.md) |
 | `superior-responsive` | Reflow, overflow, adaptive navigation, and touch targets | [Open](superior-responsive/README.md) |

@@ -21,6 +21,10 @@ Trace the affected flow and inspect callers before editing. Prefer, in order:
 
 Stop at the first option that completely satisfies realistic behavior and fits the codebase. Fewer lines in the wrong layer are not simpler.
 
+Consider splitting a file when distinct responsibilities, independent change or test needs, or a meaningful trust or dependency boundary make the current owner hard to maintain. Line count is a signal for inspection, not a mandatory threshold. Preserve cohesive code together when splitting would add indirection without a concrete benefit. Follow framework discovery and existing project conventions, and update affected imports, registrations, exports, and tests when moving code.
+
+Load `superior-architecture` when project structure, module ownership, or dependency boundaries are the primary concern; keep complexity reduction and safe removal here.
+
 Read [references/complexity-decisions-and-safe-removal.md](references/complexity-decisions-and-safe-removal.md) when removing or collapsing a shared abstraction, dependency, configuration path, extension point, or code that appears unused. Use it to distinguish accidental machinery from a real boundary and to trace indirect consumers before deletion.
 
 ## Remove accidental machinery

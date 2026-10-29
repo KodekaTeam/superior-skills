@@ -14,6 +14,7 @@ Indeks ini mencakup seluruh skill kanonis di `skills/`. Pilih skill yang paling 
 | `superior-delivery` | CI/CD, artifact, release, promotion environment, rollout, dan rollback | [Buka](superior-delivery/README.md) |
 | `superior-docs` | Pencatatan, curated implementation memory, sinkronisasi, rekonstruksi, dan handoff dokumentasi | [Buka](superior-docs/README.md) |
 | `superior-lean` | Solusi paling kecil yang tetap lengkap dan benar | [Buka](superior-lean/README.md) |
+| `superior-architecture` | Struktur proyek, tanggung jawab modul, dan batas dependensi | [Buka](superior-architecture/README.md) |
 | `superior-logic` | API, state, data, validasi, dan aturan bisnis | [Buka](superior-logic/README.md) |
 | `superior-performance` | Pengukuran, profiling, latency, throughput, resource, loading, dan capacity | [Buka](superior-performance/README.md) |
 | `superior-responsive` | Reflow, overflow, navigasi adaptif, dan target sentuh | [Buka](superior-responsive/README.md) |

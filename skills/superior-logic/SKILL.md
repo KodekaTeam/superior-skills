@@ -23,8 +23,11 @@ State a material assumption only when code and documentation cannot establish it
 
 Read [references/contract-evolution-and-workflows.md](references/contract-evolution-and-workflows.md) when changing a shared API, event, file format, client/server contract, state machine, or multi-step workflow that can span versions, retries, or partial deployment.
 
+Load `superior-architecture` when designing or assessing project structure, module ownership, dependency boundaries, or structural refactoring is a primary concern. Keep routine feature placement and domain contracts in this skill.
+
 ## Place responsibility
 
+- Inspect the framework's discovery conventions and the repository's existing feature and module owners before choosing a location. For a new project or feature without an established owner, group code by real responsibility and create folders only when they improve navigation or enforce a useful boundary.
 - Keep domain decisions separate from rendering, transport, and persistence when the existing architecture supports that boundary.
 - Validate at the point data crosses into a trusted system. Client validation improves experience but does not enforce server correctness.
 - Maintain one authoritative owner for a state transition; derive dependent state instead of synchronizing copies.
