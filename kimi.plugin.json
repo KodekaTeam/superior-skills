@@ -1,6 +1,6 @@
 {
   "name": "superior-skills",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "Evidence-based code review, engineering, delivery, reliability, performance, database, debugging, testing, UX, interface, documentation, and API security workflows for coding agents.",
   "keywords": [
     "agent-skills",
