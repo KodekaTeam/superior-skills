@@ -22,7 +22,7 @@
 - Each skill has a specific name and description to improve implicit invocation accuracy.
 - One canonical `skills/` tree serves native plugin and standalone installations across supported coding agents.
 - Shared baseline rules live in `AGENTS.md`; specialist details are loaded only when relevant.
-- Verified material implementation work is recorded in an indexed `docs/implementation-timeline/` by default, with accepted intent and maintenance knowledge curated into existing guides or decisions when useful, unless the user opts out.
+- Agents are instructed to record verified material implementation work in an indexed `docs/implementation-timeline/` by default, with accepted intent and maintenance knowledge curated into existing guides or decisions when useful, unless the user opts out.
 
 ## Structure
 
@@ -203,7 +203,7 @@ Refresh or update the marketplace and start a new conversation or agent session.
 
 ### Does Superior write implementation documentation automatically?
 
-For material, verified implementation work, `superior-docs` records a focused entry under `docs/implementation-timeline/<feature>/` when appropriate. It may also update a living implementation guide or decision when the current feature contract, criteria, invariants, or safe maintenance path changed. It never stores raw prompts, chat transcripts, or hidden reasoning. An explicit request not to create documentation always takes precedence.
+For material, verified implementation work, `superior-docs` instructs the agent to record a focused entry under `docs/implementation-timeline/<feature>/` in the target project. It may also update a living implementation guide or decision when the current feature contract, criteria, invariants, or safe maintenance path changed. The instructions exclude raw prompts, chat transcripts, and hidden reasoning. An explicit request not to create documentation always takes precedence. Recording depends on the agent loading and following the instructions; Superior does not enforce it with a hook.
 
 ### Can I install only one skill?
 
@@ -222,11 +222,5 @@ Superior prioritizes:
 - verification proportionate to the risk of the change.
 
 The briefs and rationale used to develop the documentation workflow live in `principles/`. That directory is intended for package maintainers; portable runtime instructions live in `skills/superior-docs/`.
-
-## Package validation
-
-Run `pwsh -File scripts/validate-plugin.ps1` before publishing.
-
-When `superior-docs` records implementation work, it creates and maintains the indexed `docs/implementation-timeline/` structure inside the target repository. Internal maintainer records in this package are intentionally not published.
 
 Explicit user instructions and more specific project rules always take precedence over this package's general preferences.
