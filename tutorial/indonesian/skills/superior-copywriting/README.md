@@ -1,4 +1,4 @@
-# Menggunakan `superior-copy`
+# Menggunakan `superior-copywriting`
 
 Skill ini menulis dan memperbaiki teks yang terlihat pengguna, termasuk heading, CTA, onboarding, empty state, pesan error, dan copy pemasaran.
 
@@ -17,11 +17,11 @@ Gunakan ketika kualitas bahasa, kejelasan tindakan, atau konsistensi suara produ
 ## Contoh prompt
 
 ```text
-$superior-copy Tulis ulang onboarding ini agar ringkas dan jelas bagi pemilik toko baru. Pertahankan tone yang sudah dipakai di halaman pricing.
+$superior-copywriting Tulis ulang onboarding ini agar ringkas dan jelas bagi pemilik toko baru. Pertahankan tone yang sudah dipakai di halaman pricing.
 ```
 
 ```text
-$superior-copy Perbaiki CTA dan empty state dashboard. Jangan membuat klaim manfaat yang tidak ada di materi produk.
+$superior-copywriting Perbaiki CTA dan empty state dashboard. Jangan membuat klaim manfaat yang tidak ada di materi produk.
 ```
 
 ## Kombinasi yang sesuai

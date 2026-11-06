@@ -1,4 +1,4 @@
-# Using `superior-copy`
+# Using `superior-copywriting`
 
 This skill writes and refines user-facing text, including headings, calls to action, onboarding, empty states, error messages, and marketing copy.
 
@@ -17,11 +17,11 @@ Use it when language quality, action clarity, or product-voice consistency is th
 ## Prompt examples
 
 ```text
-$superior-copy Rewrite this onboarding flow to be concise and clear for new store owners. Preserve the voice used on the pricing page.
+$superior-copywriting Rewrite this onboarding flow to be concise and clear for new store owners. Preserve the voice used on the pricing page.
 ```
 
 ```text
-$superior-copy Improve the dashboard CTA and empty state. Do not invent benefits that are absent from the product material.
+$superior-copywriting Improve the dashboard CTA and empty state. Do not invent benefits that are absent from the product material.
 ```
 
 ## Suitable combinations

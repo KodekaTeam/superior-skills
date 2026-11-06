@@ -37,7 +37,7 @@ The portable plugin discovers its skills under the canonical root `skills/` dire
 - Audit an existing interface and prepare evidence-backed recommendations: `superior-ui-audit`
 - Repair responsive behavior or mobile layout: `superior-responsive`
 - Check accessibility, keyboard use, focus, contrast, or inclusive states: `superior-accessibility`
-- Write or revise product-facing prose: `superior-copy`
+- Write or revise product-facing prose: `superior-copywriting`
 - Design or assess project structure, module ownership, and dependency boundaries: `superior-architecture`
 - Clean up code comments without changing behavior: `superior-comments`
 - Review a diff, commit, branch, pull request, or working tree for actionable defects: `superior-code-review`

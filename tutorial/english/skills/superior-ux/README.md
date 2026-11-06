@@ -32,7 +32,7 @@ $superior-ux $superior-ui Redesign onboarding so a new workspace can reach its f
 - Add `superior-logic` when state transitions, APIs, or persistence change.
 - Add `superior-responsive` when the journey changes across viewport sizes.
 - Add `superior-accessibility` for keyboard, focus, semantics, and assistive technology.
-- Add `superior-copy` when labels, instructions, and error messages need dedicated work.
+- Add `superior-copywriting` when labels, instructions, and error messages need dedicated work.
 - Add `superior-testing` for substantial journey or regression test design.
 
 ## Result checks

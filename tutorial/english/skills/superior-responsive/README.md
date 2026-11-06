@@ -36,7 +36,7 @@ $superior-responsive Design coordinated desktop and mobile compositions for this
 - Pair with `superior-ui` when building or redesigning a page.
 - Pair with `superior-accessibility` for zoom, keyboard, reading order, and target size.
 - Pair with `superior-performance` when client loading, rendering, or responsiveness requires measurement and profiling.
-- Pair with `superior-copy` when realistic text length is part of layout testing.
+- Pair with `superior-copywriting` when realistic text length is part of layout testing.
 
 ## Result checks
 

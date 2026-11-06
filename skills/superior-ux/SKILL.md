@@ -58,7 +58,7 @@ Load only the skills whose contracts materially change:
 - `superior-logic` for domain behavior, state transitions, APIs, and persistence;
 - `superior-responsive` for viewport-driven reflow and adaptive navigation;
 - `superior-accessibility` for keyboard, focus, semantics, assistive technology, and inclusive interaction;
-- `superior-copy` for labels, instructions, errors, and product voice;
+- `superior-copywriting` for labels, instructions, errors, and product voice;
 - `superior-testing` for dedicated journey, contract, or regression test design;
 - `superior-docs` when the resulting experience contract must remain durable.
 

@@ -6,8 +6,8 @@ Gabungkan skills berdasarkan concern yang benar-benar ada, bukan berdasarkan jum
 
 | Tugas | Skill utama | Tambahan bila relevan |
 |---|---|---|
-| Membuat halaman baru | `superior-ui` | `superior-responsive`, `superior-accessibility`, `superior-copy` |
-| Journey pengguna, arsitektur informasi, atau task flow | `superior-ux` | `superior-ui` untuk implementasi visual; `superior-logic` untuk behavior; `superior-copy` untuk bahasa |
+| Membuat halaman baru | `superior-ui` | `superior-responsive`, `superior-accessibility`, `superior-copywriting` |
+| Journey pengguna, arsitektur informasi, atau task flow | `superior-ux` | `superior-ui` untuk implementasi visual; `superior-logic` untuk behavior; `superior-copywriting` untuk bahasa |
 | Audit visual read-only | `superior-ui-audit` | `superior-accessibility` jika diminta |
 | Fitur full-stack | `superior-logic` + `superior-ui` | `superior-docs` jika pengetahuan durable berubah |
 | Review umum terhadap change set | `superior-code-review` | Skill domain khusus hanya ketika concern tersebut memerlukan kedalaman substansial |

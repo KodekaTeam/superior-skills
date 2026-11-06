@@ -209,6 +209,10 @@ For material, verified implementation work, `superior-docs` instructs the agent 
 
 The plugin installs the complete package so routing and shared references remain consistent. For a standalone setup, individual `superior-*` folders can be copied, but any referenced files must be copied with them.
 
+### What happened to `superior-copy`?
+
+The copywriting skill is now named `superior-copywriting`. Update explicit `$superior-copy` references to `$superior-copywriting`. If you installed standalone skill folders manually, remove the old `superior-copy` folder and install the new one to avoid duplicate discovery.
+
 ## Output principles
 
 Superior prioritizes:

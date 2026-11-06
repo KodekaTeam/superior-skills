@@ -1,9 +1,9 @@
 ---
-name: superior-copy
+name: superior-copywriting
 description: Write or revise user-facing product and marketing copy with a specific voice, verifiable claims, natural rhythm, and useful actions. Use for interface labels, onboarding, landing pages, help text, and product messaging. Do not use for code comments or neutral technical documentation unless tone editing is requested.
 ---
 
-# Superior Copy
+# Superior Copywriting
 
 Write for a known reader doing a real task. Preserve the user's voice and facts; remove patterns that make prose interchangeable without sanding away personality.
 

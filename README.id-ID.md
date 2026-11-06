@@ -210,6 +210,10 @@ Untuk pekerjaan implementasi material yang telah diverifikasi, `superior-docs` m
 
 Instalasi plugin memasang seluruh paket agar routing dan referensi bersama tetap konsisten. Untuk pemasangan standalone, folder `superior-*` tertentu dapat disalin secara terpisah, tetapi seluruh file yang dirujuk skill tersebut juga harus ikut disalin.
 
+### Apa yang terjadi pada `superior-copy`?
+
+Skill copywriting sekarang bernama `superior-copywriting`. Perbarui pemanggilan eksplisit `$superior-copy` menjadi `$superior-copywriting`. Jika folder skill standalone disalin secara manual, hapus folder lama `superior-copy` dan pasang folder baru agar agent tidak menemukan dua skill yang sama.
+
 ## Prinsip hasil
 
 Superior mengutamakan:

@@ -8,7 +8,7 @@ This index covers every canonical skill available in `skills/`. Select the skill
 | `superior-api-security` | REST API hardening, authorization boundaries, rate limiting, abuse controls, and security verification | [Open](superior-api-security/README.md) |
 | `superior-code-review` | Evidence-backed review of diffs, commits, branches, pull requests, and working trees | [Open](superior-code-review/README.md) |
 | `superior-comments` | Auditing or refining comments without changing code behavior | [Open](superior-comments/README.md) |
-| `superior-copy` | User-facing product and marketing copy | [Open](superior-copy/README.md) |
+| `superior-copywriting` | User-facing product and marketing copy | [Open](superior-copywriting/README.md) |
 | `superior-database` | Schemas, queries, indexes, transactions, migrations, and backfills | [Open](superior-database/README.md) |
 | `superior-debugging` | Evidence-driven diagnosis of reproducible, intermittent, and runtime failures | [Open](superior-debugging/README.md) |
 | `superior-delivery` | CI/CD, artifacts, releases, environment promotion, rollout, and rollback | [Open](superior-delivery/README.md) |

@@ -36,7 +36,7 @@ $superior-responsive Rancang komposisi desktop dan mobile yang saling konsisten 
 - Dengan `superior-ui` untuk pembangunan atau redesign halaman.
 - Dengan `superior-accessibility` untuk zoom, keyboard, urutan baca, dan ukuran target.
 - Dengan `superior-performance` ketika loading, rendering, atau responsiveness client memerlukan pengukuran dan profiling.
-- Dengan `superior-copy` jika panjang teks nyata menjadi bagian dari pengujian layout.
+- Dengan `superior-copywriting` jika panjang teks nyata menjadi bagian dari pengujian layout.
 
 ## Hasil yang perlu diperiksa
 

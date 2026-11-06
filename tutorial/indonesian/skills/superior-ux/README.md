@@ -32,7 +32,7 @@ $superior-ux $superior-ui Redesign onboarding agar workspace baru dapat mencapai
 - Tambahkan `superior-logic` bila state transition, API, atau persistence berubah.
 - Tambahkan `superior-responsive` bila journey berubah pada ukuran viewport berbeda.
 - Tambahkan `superior-accessibility` untuk keyboard, fokus, semantik, dan assistive technology.
-- Tambahkan `superior-copy` bila label, instruksi, dan pesan error memerlukan pekerjaan khusus.
+- Tambahkan `superior-copywriting` bila label, instruksi, dan pesan error memerlukan pekerjaan khusus.
 - Tambahkan `superior-testing` untuk desain journey test atau regression test yang substansial.
 
 ## Hasil yang perlu diperiksa
