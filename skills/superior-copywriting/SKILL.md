@@ -15,6 +15,10 @@ Do not “improve” deliberate slang, fragments, punctuation habits, or cultura
 
 ## Draft from meaning
 
+Read [references/copy-by-context.md](references/copy-by-context.md) when writing or substantially revising landing-page messaging, calls to action, onboarding, interface states, or other product copy whose purpose and available actions must be established. For focused edits, apply the existing product voice and facts directly.
+
+Read [references/language-and-interface-fit.md](references/language-and-interface-fit.md) when adapting copy across languages or locales, resolving inconsistent terminology, or fitting text into constrained interfaces. Preserve meaning and the product's established language rather than translating or shortening mechanically.
+
 - Lead with the fact, action, or user outcome that matters now.
 - Name the product object and action instead of relying on abstract nouns.
 - Make button labels describe the result: “Send invoice,” not “Continue.”
