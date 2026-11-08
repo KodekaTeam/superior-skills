@@ -19,6 +19,10 @@ Trace the affected flow and inspect callers before editing. Prefer, in order:
 5. an already-installed dependency;
 6. a small local implementation with an explicit owner.
 
+Before adding a function, handler, component, hook, service, validation rule, or other behavior, search the relevant feature and shared code by purpose as well as plausible names. Inspect existing implementations and consumers rather than assuming similar names imply the same behavior. Compare inputs, outputs, side effects, error handling, platform and lifecycle, authorization, and ownership where relevant.
+
+Reuse a suitable existing capability. If it nearly fits, extend or improve its existing owner when that preserves its contract and follows the project's structure; trace direct and indirect consumers and verify affected callers. Add a separate implementation when the existing behavior, ownership, or constraints differ, or adapting it would introduce inappropriate coupling or break compatibility. Keep the search proportional to the change and report material tradeoffs.
+
 Stop at the first option that completely satisfies realistic behavior and fits the codebase. Fewer lines in the wrong layer are not simpler.
 
 Consider splitting a file when distinct responsibilities, independent change or test needs, or a meaningful trust or dependency boundary make the current owner hard to maintain. Line count is a signal for inspection, not a mandatory threshold. Preserve cohesive code together when splitting would add indirection without a concrete benefit. Follow framework discovery and existing project conventions, and update affected imports, registrations, exports, and tests when moving code.

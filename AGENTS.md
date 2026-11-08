@@ -6,6 +6,7 @@ Use this file as a portable baseline. Instructions supplied by the user and rule
 
 - Read the relevant project documentation and trace the affected implementation before choosing a solution.
 - Inspect and reuse existing components, utilities, dependencies, conventions, and platform capabilities before introducing new abstractions or dependencies.
+- Before adding behavior, search the affected feature and shared project code by purpose and plausible names for existing handlers, functions, components, hooks, services, validation, or other relevant capabilities. Compare their contracts and consumers; reuse or safely extend a suitable owner in the established structure, and create a new one only when existing behavior or ownership does not fit. Preserve affected callers, error handling, security, and compatibility.
 - Preserve established architecture, naming, visual language, and product behavior unless the task explicitly changes them.
 - Make the smallest complete, coherent change that resolves the requested outcome. Do not bundle speculative cleanup or unrelated refactors.
 - Choose tests according to meaningful risk and observable behavior, not superficial test counts.
