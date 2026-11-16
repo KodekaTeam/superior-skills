@@ -5,10 +5,14 @@ Use this reference when UI quality depends on claims, data, navigation, controls
 ## Content and evidence
 
 - Use real supplied content when available.
-- Mark examples and placeholders so nobody can mistake them for production truth.
+- Ensure users cannot mistake illustrative or sample data for real results when that distinction matters to their decisions. Use a concise label at the nearest shared context, such as a page-level "Demo data" label when it unambiguously covers all affected content; repeat or place labels closer when context, accessibility, or mixed real and sample content requires it.
 - Never invent customers, testimonials, usage counts, revenue, uptime, security certifications, rankings, or recent activity.
 - Preserve unknowns. A truthful empty value is better than plausible fiction.
 - Make headings and labels identify the actual task, object, or outcome. Replace broad claims with concrete capability only when the repository supports it.
+
+Distinguish user-facing state from implementation status. Explain static data, an unconnected backend, temporary assets, or unfinished integration in the developer handoff rather than in each UI element. Show an unavailable or demo state in the interface when omitting it could mislead a user about data, actions, or their consequences; make the message relevant to the user's next decision rather than the implementation plan.
+
+Use a genuine empty state only when the application has established that data is absent. Do not present an unconnected or failing data source as "no records" or imply that unsaved actions succeeded. Decorative layout and generic illustration need no repeated "example" labels when they cannot reasonably be mistaken for factual product claims.
 
 Do not expose the production process as user-facing content. Copy such as "logos will be shown here," "content will be replaced later," or an unsupported "coming soon" describes an author's plan rather than the section's value.
 
@@ -19,7 +23,7 @@ When a section lacks specific content:
 3. use an explicit unavailable state only when the status changes what the user should do; and
 4. remove or withhold the section when it has no current informational or functional value.
 
-For an explicitly requested recreation, preserve the requested section's structure when truthful product content or clearly identified sample content can fill it. If a section cannot be represented honestly or safely, disclose the necessary omission or change rather than silently redesigning the page.
+For an explicitly requested recreation, preserve the requested section's structure when truthful product content or appropriately identified sample content can fill it. If a section cannot be represented honestly or safely, disclose the necessary omission or change rather than silently redesigning the page.
 
 Do not preserve a layout merely by filling it with roadmap notes, speculative claims, or decorative placeholders.
 

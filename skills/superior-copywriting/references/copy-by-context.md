@@ -29,7 +29,7 @@ Offer alternatives when the user asks for them or a meaningful positioning decis
 
 ## Handle missing content and references
 
-Use existing approved product content first. If a required fact is unknown, write a narrower truthful statement, identify the missing input, or use a clearly identified sample when the task permits it. Keep authoring notes out of production copy. For explicitly requested design recreation, follow the skill's existing reference-hygiene and visual-fidelity rules: preserve the requested composition when honest content can fit, without copying another product's identity by default.
+Use existing approved product content first. If a required fact is unknown, write a narrower truthful statement, identify the missing input, or use a sample when the task permits it. Identify sample data where needed to prevent a misleading impression; one clear shared label can cover a group when its scope is unambiguous. Keep repeated preview explanations and technical authoring notes out of production copy; report implementation limitations to the developer unless a user-facing status is needed to explain the actual state or action. For explicitly requested design recreation, follow the skill's existing reference-hygiene and visual-fidelity rules: preserve the requested composition when honest content can fit, without copying another product's identity by default.
 
 ## Review the result
 

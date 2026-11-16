@@ -20,9 +20,9 @@ Prefer, in order:
 
 1. existing product copy, tokens, components, assets, and domain language;
 2. user-supplied facts and approved brand material;
-3. neutral placeholders that state their role and are visibly non-production.
+3. neutral, replaceable content; identify it as illustrative where necessary to prevent users mistaking it for real data or claims.
 
-For an explicit visual recreation, retain the reference's layout and visual hierarchy while replacing source-specific content as needed. Use authorized product content or clearly identified sample content with similar visual footprint; preserve required notices and do not invent factual claims.
+For an explicit visual recreation, retain the reference's layout and visual hierarchy while replacing source-specific content as needed. Use authorized product content or sample content with a similar visual footprint; identify samples in a concise shared context when needed to prevent a misleading impression. Preserve required notices and do not invent factual claims.
 
 Do not carry over source-specific:
 

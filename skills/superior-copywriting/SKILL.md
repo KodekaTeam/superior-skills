@@ -30,13 +30,15 @@ Read [references/language-and-interface-fit.md](references/language-and-interfac
 
 - Never invent customers, quotes, numbers, research, awards, compliance, or consensus.
 - Attribute claims to a real source or write a narrower factual statement.
-- Mark examples as examples. Do not make placeholder identities look like real users.
+- Identify sample content when users could mistake it for real data or claims in a way that affects their decisions. A concise label in a shared context may be sufficient; repeat it only where needed for clarity or accessibility. Do not make placeholder identities look like real users.
 - Preserve uncertainty where evidence is incomplete; do not fill gaps with plausible detail.
 - Avoid guarantees unless the product contract actually guarantees the result.
 
 ## Keep authoring notes out of product copy
 
 Product-facing copy must describe the section's present purpose, available value, or useful next action, not the author's plan to complete it later. Do not ship filler such as "content will be added here," "replace this later," or a generic "coming soon" unless an announced future state is itself verified and useful to the audience.
+
+Report static data, missing database connections, temporary assets, and other implementation limitations to the developer. Surface a concise, user-relevant status in the interface only when it is necessary to prevent a misleading impression or explain an unavailable action. Do not repeat demo or preview explanations on every element, and do not present an unknown or failed data source as a verified empty state.
 
 When specific facts are unavailable, choose the smallest honest result:
 
@@ -45,13 +47,13 @@ When specific facts are unavailable, choose the smallest honest result:
 - show an unavailable state only when knowing that state helps the user; or
 - omit the section when it has no present value.
 
-For an explicitly requested design recreation, preserve the requested section and visual hierarchy where possible using truthful product content or clearly identified sample content. Match the reference's approximate text footprint and line count without inventing claims; disclose any necessary omission or material change.
+For an explicitly requested design recreation, preserve the requested section and visual hierarchy where possible using truthful product content or appropriately identified sample content. Match the reference's approximate text footprint and line count without inventing claims; disclose any necessary omission or material change.
 
 Do not turn the missing fact into a broader unsupported claim. A section without confirmed partners, customers, metrics, or features must not imply that they already exist.
 
 ## Keep references out of the product identity
 
-Treat examples, templates, screenshots, and competitor copy as evidence of structure or tone, not as product content. Do not carry source names, slogans, fictional companies, people, URLs, or demo labels into the result unless the user explicitly requests them. Prefer verified project language; when it is unavailable, use neutral, visibly replaceable placeholders that describe their role.
+Treat examples, templates, screenshots, and competitor copy as evidence of structure or tone, not as product content. Do not carry source names, slogans, fictional companies, people, URLs, or demo labels into the result unless the user explicitly requests them. Prefer verified project language; when it is unavailable, use neutral, replaceable content and identify it in the appropriate context when necessary to avoid misleading users.
 
 When a user asks to recreate a reference, separating source identity from product copy does not authorize redesigning its visible layout. Choose replacement copy that fits the reference's content hierarchy and approximate text length while remaining honest and readable.
 
