@@ -21,9 +21,13 @@ Before changing code, identify:
 
 Trace the effective request path. Do not assume a gateway, framework default, or client-side check enforces the requirement until configuration and behavior prove it.
 
+For an audit or review, keep the work read-only unless the user also requests changes. Trace sensitive data from its source through authorization, serialization, caching, telemetry, and integrations to its recipients; investigate only paths relevant to the requested scope. Distinguish confirmed exposure from a plausible but unverified risk.
+
 ## Select controls from risk
 
 Read [references/api-security-controls.md](references/api-security-controls.md) for authentication, object/function/property authorization, input and output boundaries, resource consumption, sensitive business flows, SSRF, browser-facing controls, errors, secrets, inventory, and third-party API consumption.
+
+Use the linked OWASP guidance as a risk baseline, not proof of compliance. When a specific standard or assurance level is requested, identify its version and applicable requirements, and map each claim to evidence or an explicit verification gap. Check current advisories for relevant components when a known vulnerability or version-specific risk is in scope; do not send private project details to an external service without authorization.
 
 Prioritize controls that prevent a caller from:
 

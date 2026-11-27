@@ -33,6 +33,12 @@ Use explicit request and response schemas. Bind only properties the caller may s
 
 Treat ownership, role, price, status, balance, approval, internal flags, and audit fields as server-owned unless the contract explicitly delegates them.
 
+### Trace sensitive data exposure
+
+For sensitive data in scope, follow its path from storage or an upstream response through queries, authorization, transformations, serializers, and every relevant destination. Inspect actual response bodies and headers, including list, search, export, error, and alternate-version paths; the fields hidden by a UI can still be present on the wire. Check shared caches, logs, traces, queues, and integrations where the same data may be copied. Compare each recipient and field with its permitted purpose and retention policy, not merely with the fields shown on screen.
+
+An overbroad internal query is not by itself proof of an externally reachable leak. Document the reachable path and affected actor, tenant, or data when confirmed; label inaccessible paths and unverified configurations as unknown. Use synthetic or redacted data for evidence and preserve existing clients when narrowing a response contract.
+
 ## Input and protocol boundaries
 
 - Accept only documented methods, media types, encodings, and schema shapes.
@@ -82,6 +88,7 @@ Any client-influenced URL, webhook, import source, callback, redirect, proxy, or
 - Prefer server-selected destinations or explicit allowlists of schemes, hosts, ports, and media types.
 - Parse and normalize with one maintained URL implementation before comparison and use the normalized result for the request.
 - Resolve destinations safely and block loopback, link-local, private, metadata, and other prohibited ranges according to deployment needs.
+- Bind address validation to the actual connection, including each redirect; avoid validating one DNS result while the HTTP client independently resolves another. Preserve TLS hostname verification and use a trusted egress proxy or supported client controls where appropriate.
 - Revalidate redirect targets or disable redirects when they are unnecessary.
 - Isolate outbound fetchers and restrict egress where infrastructure supports it.
 - Bound response size, connection time, total time, redirects, and content handling.
@@ -127,4 +134,6 @@ For each endpoint, record:
 7. deployment-layer controls and their verified owner;
 8. negative tests that prove enforcement.
 
-Use the OWASP API Security Top 10 and REST Security Cheat Sheet as maintained external baselines, then adapt them to the system rather than treating them as a complete risk analysis.
+Use the [OWASP API Security Top 10](https://api-security.owasp.org/), [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html), and, where specific verification requirements are needed, [OWASP ASVS](https://asvs.owasp.org/) as maintained baselines. Record the edition and applicable requirements when making an explicit standards assessment; a Top 10 review alone is not certification or a complete risk analysis. Check the current primary source rather than assuming an old version or requirement identifier remains current.
+
+When a dependency or framework advisory is relevant to the API boundary, check its installed version and deployment exposure against the vendor's advisory or an authoritative vulnerability database. Distinguish a matching advisory from a confirmed exploitable path; report version, affected range, prerequisites, evidence, and remediation or verification gaps. An unavailable advisory source or scan is unknown, not proof that no vulnerability exists. Avoid uploading lockfiles, source code, credentials, or private component inventories to external scanners without authorization.

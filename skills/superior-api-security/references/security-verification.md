@@ -34,6 +34,7 @@ Test the effective operation-level security requirement, not merely the presence
 - Test list, search, export, bulk, nested-resource, and alternate-version routes; authorization gaps often appear outside single-object endpoints.
 - Send server-owned or privileged properties and verify they are rejected or ignored according to the documented schema.
 - Verify sensitive properties are absent from responses for callers that lack access.
+- Inspect raw response bodies and headers for sensitive data, not just rendered UI. Compare authorized, lower-privilege, and cross-tenant callers using synthetic records, including list, export, error, and cached responses where applicable.
 - Test privileged operations using a valid lower-privilege token, not only an unauthenticated request.
 - Repeat checks after role, membership, ownership, or resource state changes.
 
@@ -56,6 +57,7 @@ Use controlled fixtures, not real internal targets.
 
 - Verify unapproved schemes, hosts, ports, address ranges, and redirect destinations are rejected.
 - Test canonicalization and resolution variants supported by the URL parser.
+- In a controlled resolver and server fixture, test that the address validated by policy is the address actually connected to, including a changed DNS answer and redirect targets. Preserve hostname and certificate verification.
 - Confirm response size, redirect count, connection time, and total time are bounded.
 - Verify upstream bodies, headers, credentials, and connection details are not reflected to the client.
 - Confirm infrastructure egress rules support the application policy when they are part of the design.
@@ -75,6 +77,8 @@ Report:
 - tested controls and enforcement locations;
 - relevant test cases and observed outcomes;
 - controls delegated to gateway, identity provider, cloud policy, or another service;
+- confirmed exposure paths versus suspected or unverified paths, with sanitized evidence;
+- standard edition and applicable requirement identifiers when a standards assessment was requested, and any relevant advisory version and applicability;
 - assumptions that could not be verified locally;
 - rollout, compatibility, and false-positive risks;
 - metrics and alerts needed to tune limits or detect regressions.
