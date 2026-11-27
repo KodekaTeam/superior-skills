@@ -21,6 +21,8 @@ Create or update one coherent record after verified changes to any of the follow
 
 One user task should normally produce one outcome-oriented record even when it touches many files. Extend the same record when follow-up corrections occur in the same task.
 
+Choose the record by the outcome, not the feature name alone. For an ongoing implementation, update its record when follow-up work corrects or completes that same outcome, including across sessions when the record still represents work in progress. For a distinct later change, create a new specific record in the same feature domain even if it affects the same feature. Preserve established historical records; link a later corrective or superseding record rather than rewriting the earlier outcome. Follow an existing project convention when it defines a different record boundary.
+
 Before writing the record, inspect repository status and the task's final diff. Attribute only outcomes produced or explicitly adopted in the current task. Pre-existing staged, unstaged, untracked, or concurrent user changes may be relevant context, but do not claim them as this task's implementation. When changes overlap and authorship cannot be separated confidently, narrow the record to verified outcomes and state the attribution limit.
 
 Treat a change as material when at least one of these is true:
@@ -159,6 +161,8 @@ Record choices that affect future maintenance. If rationale was not established,
 
 List checks actually run and their observed results. Separate unexecuted recommendations under limitations or next work.
 
+Summarize ordinary implementation checks in this record, identifying their scope and outcome. State failed, unavailable, or unrun checks separately; a passing check proves only what it actually exercised. Link durable evidence when it exists, without copying raw logs or claiming that a planned check passed.
+
 ## Limitations and follow-up
 
 Capture unresolved risk, compatibility concerns, deferred work, rollout needs, or `None known` when that statement is supported.
@@ -197,6 +201,8 @@ The timeline record is the default historical artifact. Add or update other coll
 - `roadmap/`: accepted future work, never presented as shipped behavior.
 
 Link related documents instead of duplicating their full content in the timeline entry.
+
+A separate verification report is appropriate when the user requests one, the project already maintains one, or the investigation has substantial independent value, such as a scoped security audit, incident investigation, or multi-scenario performance study. Use the project's existing location and conventions; summarize relevant results and link the report from the implementation record. Do not create a separate report or folder for routine checks alone.
 
 The timeline remains the historical record. When a change alters how a maintained feature works now, update or create one stable implementation guide only if the current contract, flow, invariants, or safe modification procedure would help future work. Do not create a guide merely because a timeline record exists.
 
