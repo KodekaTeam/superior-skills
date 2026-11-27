@@ -31,6 +31,8 @@ Offer alternatives when the user asks for them or a meaningful positioning decis
 
 Use existing approved product content first. If a required fact is unknown, write a narrower truthful statement, identify the missing input, or use a sample when the task permits it. Identify sample data where needed to prevent a misleading impression; one clear shared label can cover a group when its scope is unambiguous. Keep repeated preview explanations and technical authoring notes out of production copy; report implementation limitations to the developer unless a user-facing status is needed to explain the actual state or action. For explicitly requested design recreation, follow the skill's existing reference-hygiene and visual-fidelity rules: preserve the requested composition when honest content can fit, without copying another product's identity by default.
 
+For example, a decorative image needs no caption saying it can be replaced. Fictional sales figures may need a concise shared "Sample data" label if they could be mistaken for actual results. If an action cannot save, communicate its unavailable state when users need to know; explain the missing implementation to the developer rather than adding technical notes to the page. Choose wording from the product and audience, not these examples verbatim.
+
 ## Review the result
 
 Check that each headline, instruction, CTA, and state has a distinct job; neighboring text should clarify rather than repeat it. Verify claims against supplied evidence and ensure the text describes the real state or action. Report any proposed assumptions, missing facts, or unverified behavior that materially affect the copy.

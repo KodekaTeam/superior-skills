@@ -14,6 +14,8 @@ Distinguish user-facing state from implementation status. Explain static data, a
 
 Use a genuine empty state only when the application has established that data is absent. Do not present an unconnected or failing data source as "no records" or imply that unsaved actions succeeded. Decorative layout and generic illustration need no repeated "example" labels when they cannot reasonably be mistaken for factual product claims.
 
+For example, an authorized decorative image in a landing-page hero normally needs no "demo" badge or note that it can be replaced. A dashboard showing fictional revenue figures may need one clear label covering those figures when viewers might treat them as actual results; mixed real and sample figures may need more specific context. An unavailable save action needs an honest state when it matters to the user, while the missing backend can be explained in the developer handoff. These examples do not authorize inventing business claims or imply that every mockup needs a label.
+
 Do not expose the production process as user-facing content. Copy such as "logos will be shown here," "content will be replaced later," or an unsupported "coming soon" describes an author's plan rather than the section's value.
 
 When a section lacks specific content:
